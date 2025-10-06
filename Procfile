@@ -1,1 +1,1 @@
-web: gunicorn parent-code-app.wsgi 
+web: gunicorn parentcodeblog.wsgi 
