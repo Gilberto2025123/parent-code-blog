@@ -23,16 +23,29 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 import os
 
-if os.path.isfile('env.py'):
-    import env
+# Load local env.py in development (kept out of version control). Use a
+# try/except so missing env.py won't crash the app.
+try:
+    # env.py (if present) should call os.environ.setdefault(...) to provide
+    # SECRET_KEY and DATABASE_URL for local development.
+    import env  # type: ignore
+except Exception:
+    # env.py not present or had an error. We'll continue and rely on
+    # environment variables. Do NOT commit env.py to source control.
+    pass
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY must come from the environment in production. Provide a
+# development fallback so junior developers can run the project locally
+# without needing to set environment variables. Replace this in prod.
+SECRET_KEY = os.environ.get('SECRET_KEY') or 'django-insecure-dev-fallback-change-me'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG', 'False').lower() in ('1', 'true', 'yes')
 
-ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
+# Allow local testing and any Heroku subdomain. For production lock this
+# down to your real domain and keep DEBUG = False in the environment.
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '.herokuapp.com,127.0.0.1').split(',')
 
 
 # Application definition
@@ -88,7 +101,18 @@ WSGI_APPLICATION = 'parentcodeblog.wsgi.application'
 #     }
 # }
 
-DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+if os.environ.get('DATABASE_URL'):
+    # Parse the database URL from the environment (Heroku sets DATABASE_URL).
+    DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+else:
+    # Local fallback for junior developers: use SQLite so no external DB is
+    # required to run/manage the project locally.
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -125,6 +149,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Where `collectstatic` will collect static files for production (Heroku).
+# Using a simple STATIC_ROOT means no external library is required; Heroku
+# will run `collectstatic` during deploy and serve static files via
+# whitenoise or your chosen CDN if configured later.
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
