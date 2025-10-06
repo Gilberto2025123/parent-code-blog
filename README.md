@@ -1,4 +1,4 @@
-###Parent Code Blog App
+### Parent Code Blog App
 # 🧭 Design & Planning
 
 <details>
