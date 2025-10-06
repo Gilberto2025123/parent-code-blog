@@ -20,5 +20,5 @@ from parentcodeapp.views import parentcode_blog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('parentcodeapp/', parentcode_blog, name='parentcode_blog'),
+    path('', parentcode_blog, name='parentcode_blog'),
 ]
