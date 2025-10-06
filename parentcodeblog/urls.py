@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from parentcodeapp.views import parentcode_blog
+from parentcodeapp import views as parentcode_blog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', parentcode_blog, name='parentcode_blog'),
+    path('parentcodeapp/', parentcode_blog, name='parentcode_blog'),
 ]
