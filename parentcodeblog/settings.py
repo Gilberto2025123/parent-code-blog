@@ -89,6 +89,14 @@ WSGI_APPLICATION = 'parentcodeblog.wsgi.application'
 
 DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
+#  This is a list of the trusted origins for requests. 
+# Allowing these origins to add blog post content from the admin dashboard.
+# The subdomain is wildcarded with a *.
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
