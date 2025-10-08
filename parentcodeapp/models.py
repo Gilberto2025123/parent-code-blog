@@ -22,8 +22,9 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="parentcodeapp_catergory")
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="parentcodeapp_category")
     status = models.IntegerField(choices=STATUS, default=0)
+    excerpt = models.TextField(blank=True)
 
     def __str__(self):
         return self.title
