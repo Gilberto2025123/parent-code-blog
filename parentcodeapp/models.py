@@ -32,7 +32,13 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
 
     def __str__(self):
-        return self.title
+        return f"{self.title} | written by {self.author}"
+
+    class Meta:
+        ordering = ["-created_at"]
+
+
+    
 
 
 class Comment(models.Model):
