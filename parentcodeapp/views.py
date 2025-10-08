@@ -5,6 +5,6 @@ from .models import Post, Category, Comment
 
 # Create your views here.
 class PostList(generic.ListView):
-    model = Post
+    queryset = Post.objects.all()
     template_name = 'parentcodeapp/post_list.html'
 
