@@ -60,6 +60,6 @@ class Comment(models.Model):
 
 
     def __str__(self):
-        return f"Comment on {self.content} by {self.author}"
+        return f"Comment: {self.content} by {self.author}"
 
 
