@@ -1,7 +1,6 @@
 {% url 'home' as home_url %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +8,7 @@
     <meta name="description"
         content="Parent Code is a dedicated platform offering community, support and resources for parents in the tech industry.">
     <meta name="keywords" content="parent code, community, support, resources, tech industry, parents">
-
+    <title>Parent Code</title>
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +23,6 @@
 
 
     <!--Custom CSS Link-->
-    <title>Parent Code</title>
-    
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
@@ -33,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"></a>
+            <a class="navbar-brand" href="{% url 'home' %}">ParentCode</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -72,12 +69,13 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-light py-4 mt-auto">
-        <p class="m-0 text-center text-white">&copy; 2025 Parent Code. All rights reserved. Created by Gilberto Da Silva</p>
-        <p class="m-0 text-center text-white">Follow us: 
+        <p class="m-0 text-center text-white">2025 &copy; Parent Code | All rights reserved | Created by Gilberto Da Silva</p>
+        <p class="m-0 text-center text-white">Follow Us:
+            
             <i class="fa-brands fa-facebook fs-4"></i>
-            <i class="fa-brands fa-twitter-square fs-4"></i>
-            <i class="fa-brands fa-instagram-square fs-4"></i>
-            <i class="fa-brands fa-youtube-square fs-4"></i>
+            <i class="fa-brands fa-twitter fs-4"></i>
+            <i class="fa-brands fa-instagram fs-4"></i>
+            <i class="fa-brands fa-youtube fs-4"></i>
         </p>
     </footer>
     <!-- Bootstrap JS Link -->
