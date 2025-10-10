@@ -24,7 +24,7 @@
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>
                             </div>
-                            <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
+                            <a href="{{ post.slug }}" class="btn btn-primary">Read More &rarr;</a>
 
                         </div>
                     </div>
