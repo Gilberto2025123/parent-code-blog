@@ -6,5 +6,6 @@ from .models import Post, Category, Comment
 # Create your views here.
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
-    template_name = 'parentcodeapp/post_list.html'
+    template_name = 'parentcodeapp/index.html'
+    paginate_by = 6
 
