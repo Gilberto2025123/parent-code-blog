@@ -86,12 +86,20 @@ body{
 }
 
 /* Card Styles */
+.card {
+    height: 350px;  
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
 .card-body {
-  border: none;
-  border-radius: 0.5rem;
+
   overflow: hidden;
   transition: transform 0.3s;
   text-align: center;
+  flex: 1 1 auto;
+  padding: 1rem;
+  overflow: auto;
   background-color: var(--primary-button);
 }
 
@@ -99,9 +107,9 @@ body{
   transform: scale(1.05);
 }
 
+
 .btn-primary {
-  background-color: var(--primary-button);
-  
+  background-color: var(--highlight-color);
 }
 
 .light-bg {
@@ -245,5 +253,12 @@ body{
 
 .approval {
     color: var(--highlight-color)
+
+}
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    padding:0;
+    margin:0;
 }
 
