@@ -73,7 +73,7 @@ body{
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: var(--primary-button);
+  background-color: var(--primary-background);
   padding-top: 76px; /* Account for fixed navbar height */
 }
 
@@ -86,25 +86,41 @@ body{
 }
 
 /* Card Styles */
-.card {
-    height: 350px;  
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-}
-.card-body {
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; /* All cards same height */
+  border: none;
+  background-color: transparent;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 0.3s;
   text-align: center;
-  flex: 1 1 auto;
-  padding: 1rem;
-  overflow: auto;
   background-color: var(--primary-button);
 }
 
 .card-body:hover {
   transform: scale(1.05);
+}
+
+
+
+
+.author {
+  color: var(--secondary-button);
+  margin: 4px;
+  text-transform: uppercase;
+}
 }
 
 
@@ -124,10 +140,7 @@ body{
     background-color: var(--primary-background)
 }
 
-.card {
-    border: none;
-    background-color: transparent;
-}
+
 
 .image-container {
     position: relative;
@@ -146,11 +159,6 @@ body{
     height: auto;
 }
 
-.author {
-  color: var(--secondary-button);
-  margin: 4px;
-  text-transform: uppercase;
-}
 
 .masthead {
     margin-top: 10px;
@@ -160,6 +168,8 @@ body{
     height: 33vh;
     width: 100%;
 }
+
+
 
 .masthead-text {
     background-color: #445261;
