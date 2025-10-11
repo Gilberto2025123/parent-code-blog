@@ -115,12 +115,11 @@ body{
 
 
 
-.card .image-flash .author {
+.card-footer {
   color: var(--secondary-button);
-  margin: 4px;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
+  margin: auto;
+
+
 }
 
 

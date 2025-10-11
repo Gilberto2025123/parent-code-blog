@@ -14,20 +14,18 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
+                                <h2 class="card-title">{{ post.title | truncatewords:10 }}</h2>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_at | date:"F j, Y" }}</p>
-                            <p class="card-text text-muted h6">{{ post.category.name | truncatewords:30 }}</p>
-                            <div class="image-container">
-                                
-                            </div>
+                            <p class="card-text text-muted h6">{{ post.category.name}}</p>
                             <a href="{{ post.slug }}" class="btn btn-primary">Read More &rarr;</a>
+                            <div class="image-flash">
+                                <p class="author">Author: {{ post.author }}</p>
+                            </div>
 
-                 <div class="card-footer bg-white border-0 text-center">
-                    <p class="author m-0">Author: {{ post.author }}</p>
-                </div>
+                 
                         </div>
                     </div>
                 </div>
