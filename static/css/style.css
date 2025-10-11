@@ -115,11 +115,12 @@ body{
 
 
 
-
-.author {
+.card .image-flash .author {
   color: var(--secondary-button);
   margin: 4px;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
 }
 
 
