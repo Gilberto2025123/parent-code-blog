@@ -73,17 +73,18 @@
       </div>
     </div>
     <!-- Creating New Comments -->
-  <div class="col-md-4 card mb-4 mt-3 no-fixed-height">
+  <div class="col-md-4 card mb-6 mt-12 no-fixed-height">
       <div class="card-body">
         {% if user.is_authenticated %}
         <h3>Leave a comment:</h3>
         <p>Posting as: {{ user.username }}</p>
+        
         <form id="commentForm" method="post"
-          style="margin-top: 1.3em;">
+          style="padding-bottom: 20px;">
           {{ comment_form | crispy }}
           {% csrf_token %}
           <button id="submitButton" type="submit"
-            class="btn btn-signup btn-lg">Submit</button>
+            class="btn btn-signup btn-outline-primary">Submit</button>
         </form>
         {% else %}
         <p>Log in to leave a comment</p>
