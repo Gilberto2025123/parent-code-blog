@@ -13,24 +13,32 @@
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            {% if user.is_authenticated %}
-                            <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
-                            </a>
-                            <hr />
-                            <p class="card-text text-muted h6">{{ post.created_at | date:"F j, Y" }}</p>
-                            <p class="card-text text-muted h6">{{ post.category.name }}</p>
-                            <p class="card-text text-muted h6">Author: {{ post.author }}</p>
-                            <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
-                            {% else %}
-                            <h2 class="card-title">{{ post.title | truncatewords:10 }}</h2>
-                            <p class="card-text">{{ post.excerpt | truncatewords:15 }}</p>
-                            <hr />
-                            <p class="card-text text-muted h6">{{ post.created_at | date:"F j, Y" }}</p>
-                            <p class="card-text text-muted h6">{{ post.category.name }}</p>
-                            <a href="{% url 'account_signup' %}" class="btn btn-primary">Sign Up to Read More</a>
-                            {% endif %}
+                            <div class="card-content">
+                                {% if user.is_authenticated %}
+                                <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                                    <h2 class="card-title">{{ post.title | truncatewords:8 }}</h2>
+                                    <p class="card-text">{{ post.excerpt | truncatewords:12 }}</p>
+                                </a>
+                                <hr />
+                                <p class="card-text text-muted h6">{{ post.created_at | date:"F j, Y" }}</p>
+                                <p class="card-text text-muted h6">{{ post.category.name }}</p>
+                                <p class="card-text text-muted h6">Author: {{ post.author }}</p>
+                                {% else %}
+                                <h2 class="card-title">{{ post.title | truncatewords:8 }}</h2>
+                                <p class="card-text">{{ post.excerpt | truncatewords:12 }}</p>
+                                <hr />
+                                <p class="card-text text-muted h6">{{ post.created_at | date:"F j, Y" }}</p>
+                                <p class="card-text text-muted h6">{{ post.category.name }}</p>
+                                {% endif %}
+                            </div>
+                            
+                            <div class="card-actions">
+                                {% if user.is_authenticated %}
+                                <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary btn-sm">Read More &rarr;</a>
+                                {% else %}
+                                <a href="{% url 'account_signup' %}" class="btn btn-primary btn-sm">Sign Up to Read More</a>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
