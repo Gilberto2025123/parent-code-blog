@@ -1,3 +1,6 @@
+.no-fixed-height {
+  height: auto !important;
+}
 /* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Nanum+Myeongjo:wght@400;700&display=swap");
 
