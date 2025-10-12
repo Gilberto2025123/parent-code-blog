@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 
 from django.views import generic
-from .models import Post, Category
+from .models import Post 
+from .models import Category
+from .forms import CommentForm
 
 # Create your views here.
 class PostList(generic.ListView):
@@ -27,12 +29,15 @@ def post_detail(request, slug):
     post = get_object_or_404(queryset, slug=slug)
     comments = post.parentcodeapp_comments.all().order_by("-created_at")
     comment_count = post.parentcodeapp_comments.filter(is_approved=True).count()
+    comment_form = CommentForm()
 
     return render(
         request,
         "parentcodeapp/post_detail.html",
         {"post": post, 
          "comments": comments, 
-         "comment_count": comment_count},
+         "comment_count": comment_count,
+        "comment_form": comment_form,
+        }
     )
 
