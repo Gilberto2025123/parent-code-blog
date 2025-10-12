@@ -23,12 +23,16 @@
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
+                <p class="card-text mx-auto">
                     {{ post.content | safe }}
                 </p>
             </div>
         </div>
     </div>
+    <div class="row mb-5">
+        <div class="col text-center">
+            <a href="{% url 'home' %}" class="btn btn-primary rounded-pill">Back to Home</a>
+        </div>
 </div>
 
 {% endblock content %}
