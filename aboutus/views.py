@@ -10,7 +10,7 @@ def about_us(request):
 
     return render(
         request,
-        "about/aboutus.html",
-        {"about": about},
+        "aboutus/about_us.html",
+        {"aboutus": about},
     )
 
