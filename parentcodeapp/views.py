@@ -25,8 +25,8 @@ def post_detail(request, slug):
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    comments = post.comments.all().order_by("-created_at")
-    comment_count = post.comments.filter(approved=True).count()
+    comments = post.parentcodeapp_comments.all().order_by("-created_at")
+    comment_count = post.parentcodeapp_comments.filter(is_approved=True).count()
 
     return render(
         request,
