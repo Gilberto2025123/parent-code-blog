@@ -47,7 +47,7 @@ h1{
 h2{
   font-family: var(--secondary-font), cursive;
   font-size: 2.5em;
-  color: var(--secondary-text);
+  color: var(--secondary-text-color);
 }
 
 h3{
