@@ -114,14 +114,16 @@ body{
 }
 
 
-
 .card-footer {
   color: var(--secondary-button);
   margin: auto;
-
-
 }
 
+.author {
+  font-size: 0.95em;
+  margin-top: 8px;
+  text-align: center;
+}
 
 
 .btn-primary {
