@@ -1,8 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 
 from django.views import generic
-from .models import Post, Category, Comment
-
+from .models import Post, Category
 
 # Create your views here.
 class PostList(generic.ListView):
@@ -12,24 +11,28 @@ class PostList(generic.ListView):
 
     
 def post_detail(request, slug):
-        """
-        Display an individual :model:`parentcodeapp.Post`.
-    
-        **Context**
-    
-        ``post``
-            An instance of :model:`parentcodeapp.Post`.
-    
-        **Template:**
-    
-        :template:`parentcodeapp/post_detail.html`
-        """
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-    
-        return render(
-            request,
-            "parentcodeapp/post_detail.html",
-            {"post": post},
-        )
+    """
+    Display an individual :model:`parentcodeapp.Post`.
+
+    **Context**
+
+    ``post``
+        An instance of :model:`parentcodeapp.Post`.
+
+    **Template:**
+
+    :template:`parentcodeapp/post_detail.html`
+    """
+    queryset = Post.objects.filter(status=1)
+    post = get_object_or_404(queryset, slug=slug)
+    comments = post.comments.all().order_by("-created_at")
+    comment_count = post.comments.filter(approved=True).count()
+
+    return render(
+        request,
+        "parentcodeapp/post_detail.html",
+        {"post": post, 
+         "comments": comments, 
+         "comment_count": comment_count},
+    )
 
