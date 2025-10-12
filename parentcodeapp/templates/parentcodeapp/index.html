@@ -20,9 +20,11 @@
                                     <p class="card-text">{{ post.excerpt | truncatewords:12 }}</p>
                                 </a>
                                 <hr />
+                                <strong> 
                                 <p class="card-text text-muted h6">{{ post.created_at | date:"F j, Y" }}</p>
                                 <p class="card-text text-muted h6">{{ post.category.name }}</p>
                                 <p class="card-text text-muted h6">Author: {{ post.author }}</p>
+                                </strong>
                                 {% else %}
                                 <h2 class="card-title">{{ post.title | truncatewords:8 }}</h2>
                                 <p class="card-text">{{ post.excerpt | truncatewords:12 }}</p>
