@@ -1,3 +1,4 @@
+
 .no-fixed-height {
   height: auto !important;
 }
@@ -76,8 +77,13 @@ body{
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: var(--secondary-text-color);
+  background-color: var(--primary-text);
   padding-top: 76px; /* Account for fixed navbar height */
+}
+
+body, p, h4 {
+  font-family: var(--secondary-font) !important;  /* Ensure consistency across body, paragraphs, and h4 */
+  
 }
 
 /* Fixed navbar styles */
@@ -130,6 +136,10 @@ body{
 .card-footer {
   color: var(--secondary-button);
   margin: auto;
+}
+
+.card-title {
+  color: var(--secondary-button) !important;
 }
 
 .author {
