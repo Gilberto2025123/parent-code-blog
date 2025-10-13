@@ -4,7 +4,7 @@ from .models import AboutUs
 from .models import ContactForm
 # Create your views here.
 
-def about_us():
+def about_us(request):
 
     """
     Renders the About Us page
@@ -12,6 +12,7 @@ def about_us():
     about = AboutUs.objects.all().order_by('-last_updated').first()
 
     return render(
+        request,
         "aboutus/about_us.html",
         {"aboutus": about},
     )
