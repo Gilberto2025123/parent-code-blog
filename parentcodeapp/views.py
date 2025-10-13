@@ -16,6 +16,7 @@ class PostList(generic.ListView):
 
     
 def post_detail(request, slug):
+
     """
     Display an individual :model:`parentcodeapp.Post`.
 
