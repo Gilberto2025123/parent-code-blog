@@ -260,10 +260,9 @@ Follow these steps:
 # 🙌 Credits
 
 List all resources used in your project:
-- Text sources  
-- Images  
-- Code snippets  
-- Tutorials or example projects  
+Code Star Walkthrough project 
+Kaleidoscope Learning Project 
+Dev Hawks Quiz Project 
 
 ---
 
