@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib import messages
-from .models import AboutUs
-from .models import ContactForm
+from .models import AboutUs, ContactForm
+from .forms import ContactFormModelForm
 # Create your views here.
 
 def about_us(request):
@@ -17,8 +17,8 @@ def about_us(request):
         {"aboutus": about},
     )
 
-def contact_us(request):
-    from .forms import ContactForm as ContactFormModelForm 
+def contact_us_form(request):
+     
     if request.method == "POST":
         contact_us_form = ContactFormModelForm(request.POST)
         if contact_us_form.is_valid():
@@ -28,7 +28,7 @@ def contact_us(request):
         request,
         "aboutus/contact_us.html",
         {
-            "contact_us": contact_us_form,
-            "contact_form": contact_us_form,
+            "contact_us_form": contact_us_form,
+
         }
     )
