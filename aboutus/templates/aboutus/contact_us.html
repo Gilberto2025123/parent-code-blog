@@ -12,10 +12,13 @@
             <form method="post">
                 {% csrf_token %}
                 {{ contact_us_form | crispy }}
-                <button type="submit" class="btn btn-secondary">Submit</button>
+                <button type="submit" class="btn btn-outline-primary">Submit</button>
             </form>
         </div>
     </div>
 </div>
+
+
+
 {% endblock content %}
     

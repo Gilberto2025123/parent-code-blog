@@ -22,7 +22,7 @@ def contact_us(request):
     contact_us_form = ContactFormModelForm(request.POST if request.method == "POST" else None)
     if request.method == "POST" and contact_us_form.is_valid():
         contact_us_form.save()
-        messages.add_message(request, messages.SUCCESS, "Thank you for contacting Parent Code! We will get back to you shortly. Thank you!")
+        messages.success(request, "Thank you for contacting Parent Code! We will get back to you shortly. Thank you!")
         return redirect('contact_us')
 
     return render(
