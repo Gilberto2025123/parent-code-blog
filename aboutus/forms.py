@@ -4,10 +4,11 @@ from .models import ContactForm
 class ContactFormModelForm(forms.ModelForm):
     class Meta:
         model = ContactForm
-        fields = ['name', 'email', 'message', 'subject']
+        fields = ['name', 'email', 'subject', 'message']
         labels = {
             'name': 'Your Name',
             'email': 'Your Email',
-            'message': 'Your Message',
             'subject': 'Subject',
+            'message': 'Your Message',
+            
         }
