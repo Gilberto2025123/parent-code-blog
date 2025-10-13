@@ -53,9 +53,11 @@
           <div class="p-2 comments">
           {% if not comment.is_approved and comment.author == user %}
 
-          faded{% elif not comment.is_approved %}d-none
+         {% elif not comment.is_approved %} d-none
           
-          {% endif %}">
+          {% endif %}
+          
+          
           
           <p class="font-weight-bold">
             {{ comment.author }}
@@ -72,8 +74,7 @@
           </p>
           {% endif %}
            {% if user.is_authenticated and comment.author == user %}
-  <button class="btn btn-edit btn-outline-primary"
-    comment_id="{{ comment.id }}">Edit</button>
+  <a href="{% url 'comment_edit' slug=post.slug comment_id=comment.id %}" class="btn btn-edit btn-outline-primary">Edit</a>
   {% endif %}
         </div>
         <!-- Our for loop ends here -->
