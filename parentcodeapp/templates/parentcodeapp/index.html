@@ -14,12 +14,12 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="card-content">
-                                 {% if "placeholder" in post.featured_image.url %}
+                                 <!-- {% if "placeholder" in post.featured_image.url %}
         <img class="card-img-top" src="#" 
            alt="#">
         {% else %}
         <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
-        {% endif %}
+        {% endif %} -->
                                 {% if user.is_authenticated %}
                                 <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                     <h2 class="card-title">{{ post.title | truncatewords:8 }}</h2>
