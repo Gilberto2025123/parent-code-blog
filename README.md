@@ -5,12 +5,12 @@ This site was submitted as part of CodeInstitute's final project, utilising Djan
 
 # 🧭 Design & Planning
 
-<details>
-<summary><h2>User Stories</h2></summary>
+
+User Stories
 
 Write your user stories in this section.
 
-</details>
+
 
 ---
 
