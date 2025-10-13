@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import AboutUs, ContactForm
 from .forms import ContactFormModelForm
@@ -17,18 +17,19 @@ def about_us(request):
         {"aboutus": about},
     )
 
-def contact_us_form(request):
+def contact_us(request):
      
-    if request.method == "POST":
-        contact_us_form = ContactFormModelForm(request.POST)
-        if contact_us_form.is_valid():
-            contact_us_form.save()
-            messages.add_message(request, messages.SUCCESS, "Thank you for contacting Parent Code! We will get back to you shortly. Thank you!")
+    contact_us_form = ContactFormModelForm(request.POST if request.method == "POST" else None)
+    if request.method == "POST" and contact_us_form.is_valid():
+        contact_us_form.save()
+        messages.add_message(request, messages.SUCCESS, "Thank you for contacting Parent Code! We will get back to you shortly. Thank you!")
+        return redirect('contact_us')
+
     return render(
         request,
         "aboutus/contact_us.html",
         {
             "contact_us_form": contact_us_form,
-
         }
+    )
     )
