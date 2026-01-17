@@ -1,34 +1,44 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Post, Comment
 from .forms import CommentForm
 
-# Simple views for static pages
-from django.contrib.auth.decorators import login_required
+# Simple placeholder views for future features
+# These require users to be logged in to access
 
 
 @login_required
 def my_profile(request):
+    """Display user profile page - placeholder for now"""
     return render(request, "parentcodeapp/my_profile.html")
 
 
 @login_required
 def job_postings(request):
+    """Display job postings page - placeholder for now"""
     return render(request, "parentcodeapp/job_postings.html")
 
 
 @login_required
 def my_bookmarks(request):
+    """Display user's bookmarked posts - placeholder for now"""
     return render(request, "parentcodeapp/my_bookmarks.html")
 
-# Create your views here.
+
+# Main blog views
 
 
-class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1)
+class PostList(LoginRequiredMixin, generic.ListView):
+    """
+    Display list of published blog posts
+    LoginRequiredMixin ensures only logged-in users can view the blog
+    """
+    queryset = Post.objects.filter(status=1)  # Only show published posts
     template_name = 'parentcodeapp/index.html'
-    paginate_by = 6
+    paginate_by = 6  # Show 6 posts per page
 
 
 def post_detail(request, slug):
