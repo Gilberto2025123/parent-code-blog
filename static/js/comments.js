@@ -5,7 +5,6 @@ const submitButton = document.getElementById("submitButton");
 
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
 const deleteButtons = document.getElementsByClassName("btn-delete");
-const deleteConfirm = document.getElementById("deleteConfirm");
 
 /**
 * Initializes edit functionality for the provided edit buttons.
@@ -40,8 +39,9 @@ for (let button of deleteButtons) {
   button.addEventListener("click", (e) => {
     let commentId = e.target.getAttribute("data-comment-id");
     let slug = e.target.getAttribute("data-slug");
-    // Build the correct delete URL with the slug
-    deleteConfirm.href = `/blog/${slug}/delete_comment/${commentId}`;
+    // Build the correct delete URL with the slug and set it as form action
+    const deleteForm = document.getElementById("deleteForm");
+    deleteForm.action = `/blog/${slug}/delete_comment/${commentId}`;
     deleteModal.show();
   });
 }
