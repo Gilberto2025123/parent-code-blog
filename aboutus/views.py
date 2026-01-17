@@ -5,7 +5,10 @@ from .forms import ContactFormModelForm
 
 
 def landing_page(request):
-    """Renders the Landing Page"""
+    """
+    Renders the Landing Page - this is the first page visitors see
+    Shows welcome message and call to action to sign up
+    """
     return render(
         request,
         "aboutus/Landing_page.html",

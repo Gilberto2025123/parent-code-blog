@@ -150,6 +150,44 @@ body, p, h4 {
   background-color: var(--highlight-color);
 }
 
+/* Styling for Login and Sign Up buttons in navigation bar */
+/* Makes them look clickable with rounded corners and smooth transitions */
+.nav-btn {
+  padding: 8px 20px !important;
+  border-radius: 25px; /* Rounded corners for modern look */
+  transition: all 0.3s ease; /* Smooth animation on hover */
+  margin: 0 5px;
+}
+
+/* Login button style - outlined with blue border */
+.nav-btn.btn-outline-primary {
+  border-color: var(--primary-text);
+  color: var(--primary-text);
+}
+
+/* Login button hover effect - fills in with blue and lifts up */
+.nav-btn.btn-outline-primary:hover {
+  background-color: var(--primary-text);
+  color: white;
+  transform: translateY(-2px); /* Lifts button up slightly */
+  box-shadow: 0 4px 8px rgba(0, 125, 192, 0.3); /* Adds shadow underneath */
+}
+
+/* Sign Up button style - filled with orange color */
+.nav-btn.btn-primary {
+  background-color: var(--highlight-color);
+  border-color: var(--highlight-color);
+  color: white;
+}
+
+/* Sign Up button hover effect - changes to different blue and lifts up */
+.nav-btn.btn-primary:hover {
+  background-color: var(--secondary-button);
+  border-color: var(--secondary-button);
+  transform: translateY(-2px); /* Lifts button up slightly */
+  box-shadow: 0 4px 8px rgba(247, 160, 114, 0.3); /* Adds shadow underneath */
+}
+
 .light-bg {
     background-color: var(--primary-background)
 }
