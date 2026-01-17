@@ -4,6 +4,14 @@ from .models import AboutUs
 from .forms import ContactFormModelForm
 
 
+def landing_page(request):
+    """Renders the Landing Page"""
+    return render(
+        request,
+        "aboutus/Landing_page.html",
+    )
+
+
 def about_us(request):
     """Renders the About Us page"""
     about = AboutUs.objects.all().order_by('-last_updated').first()

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+            <!-- Centered Logo -->
+            <div class="mb-5">
+                <img src="{% static 'images/Parent Code LOGO.png' %}" 
+                     alt="Parent Code Logo - A dedicated platform for parents in tech" 
+                     class="img-fluid" 
+                     style="max-width: 400px;">
+            </div>
+            
+            <!-- Hero Title -->
+            <h1 class="mb-4">Welcome to Parent Code</h1>
+            
+            <!-- Description -->
+            <div class="mb-4">
+                <p class="lead">
+                    A dedicated platform offering community, support and resources for parents in the tech industry. 
+                    Connect with fellow parent developers, share experiences, and access valuable resources to help 
+                    balance your career in technology with family life.
+                </p>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="mt-5">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'home' %}" class="btn btn-primary btn-lg px-5 py-3">
+                        Explore Posts
+                    </a>
+                {% else %}
+                    <a href="{% url 'account_signup' %}" class="btn btn-primary btn-lg px-5 py-3">
+                        Join Our Community
+                    </a>
+                    <div class="mt-3">
+                        <p class="text-muted">
+                            Already have an account? 
+                            <a href="{% url 'account_login' %}" class="text-decoration-none">Sign in</a>
+                        </p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
