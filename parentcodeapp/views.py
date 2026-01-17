@@ -1,19 +1,36 @@
-from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from django.contrib import messages
-from django.http import HttpResponseRedirect
 from .models import Post, Comment
-
-from .models import Category
 from .forms import CommentForm
 
+# Simple views for static pages
+from django.contrib.auth.decorators import login_required
+
+
+@login_required
+def my_profile(request):
+    return render(request, "parentcodeapp/my_profile.html")
+
+
+@login_required
+def job_postings(request):
+    return render(request, "parentcodeapp/job_postings.html")
+
+
+@login_required
+def my_bookmarks(request):
+    return render(request, "parentcodeapp/my_bookmarks.html")
+
 # Create your views here.
+
+
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = 'parentcodeapp/index.html'
     paginate_by = 6
 
-    
+
 def post_detail(request, slug):
 
     """
@@ -31,7 +48,9 @@ def post_detail(request, slug):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comments = post.parentcodeapp_comments.all().order_by("-created_at")
-    comment_count = post.parentcodeapp_comments.filter(is_approved=True).count()
+    comment_count = (
+        post.parentcodeapp_comments.filter(is_approved=True).count()
+    )
 
     # Handling the form submission
     if request.method == "POST":
@@ -52,14 +71,15 @@ def post_detail(request, slug):
     return render(
         request,
         "parentcodeapp/post_detail.html",
-        {"post": post, 
-         "comments": comments, 
-         "comment_count": comment_count,
-         "comment_form": comment_form,
-        }
+        {
+            "post": post,
+            "comments": comments,
+            "comment_count": comment_count,
+            "comment_form": comment_form,
+        },
     )
-        # return HttpResponseRedirect(reverse('post_detail', args=[slug]))
     
+
 def comment_edit(request, slug, comment_id):
     """
     Simple view to let users edit their own comment.
@@ -96,14 +116,16 @@ def comment_delete(request, slug, comment_id):
     """
     view to delete comment
     """
-    queryset = Post.objects.filter(status=1)
-    post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
 
     if comment.author == request.user:
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(
+            request,
+            messages.ERROR,
+            'You can only delete your own comments!'
+        )
 
     return redirect('post_detail', slug=slug)
