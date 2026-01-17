@@ -138,5 +138,5 @@ def comment_delete(request, slug, comment_id):
                 messages.ERROR,
                 'You can only delete your own comments!'
             )
-    
+
     return redirect('post_detail', slug=slug)
