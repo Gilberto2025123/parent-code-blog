@@ -145,6 +145,25 @@ body, p, h4 {
   text-align: center;
 }
 
+/* Post detail typography helpers */
+.post-title,
+.post-subtitle,
+.card-text,
+.comments,
+.approval {
+  font-family: var(--secondary-font), serif;
+  color: var(--primary-text);
+}
+
+.card-text * {
+  font-family: var(--secondary-font), serif !important;
+  color: var(--primary-text) !important;
+}
+
+.comments .btn {
+  font-family: var(--secondary-font), serif;
+}
+
 
 .btn-primary {
   background-color: var(--highlight-color);
