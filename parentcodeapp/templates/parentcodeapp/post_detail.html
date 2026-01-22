@@ -75,9 +75,8 @@
           </p>
           {% endif %}
            {% if user.is_authenticated and comment.author == user %}
-           
   <a href="{% url 'comment_edit' slug=post.slug comment_id=comment.id %}" class="btn btn-edit">Edit</a>
-  <button type="button" class="btn btn-delete" data-comment-id="{{ comment.id }}" data-slug="{{ post.slug }}">Delete</button>
+  <button type="button" class="btn btn-delete" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="document.getElementById('deleteConfirm').href='{% url 'comment_delete' slug=post.slug comment_id=comment.id %}'">Delete</button>
     {% endif %}
         </div>
         <!-- Our for loop ends here -->
@@ -122,10 +121,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary"
             data-bs-dismiss="modal">Close</button>
-          <form id="deleteForm" method="POST" style="display: inline;">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-danger">Delete</button>
-          </form>
+          <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
         </div>
       </div>
     </div>

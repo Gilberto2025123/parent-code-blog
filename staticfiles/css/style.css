@@ -1,5 +1,6 @@
+
 /* Google Fonts Import */
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Nanum+Myeongjo:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Funnel+Display:wght@300..800&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -22,7 +23,7 @@ html {
   --secondary-text-color:#ecc1b6ff;
   --highlight-color: #f7a072ff;
   --primary-font: "Funnel Display", sans-serif;
-  --secondary-font: "Nanum Myeongjo", serif;
+  --secondary-font: "Comfortaa", sans-serif;
 }
 
 
@@ -45,36 +46,41 @@ h1{
 }
 
 h2{
-  font-family: var(--secondary-font), cursive;
+  font-family: var(--primary-font), sans-serif;
   font-size: 2.5em;
-  color: var(--secondary-text);
+  color: var(--secondary-button);
 }
 
 h3{
-  font-family: var(--secondary-font), cursive;
+  font-family: var(--primary-font), sans-serif;
   font-size: 2.5em;
-  color: var(--primary-button);
+  color: var(--secondary-button);
 }
 
 h4 {
-  font-family: var(--secondary-font), cursive;
+  font-family: var(--secondary-font), serif;
   font-size: 2.5em;
   color: var(--secondary-button);
 }
 
 p {
-  font-family: var(--secondary-font), sans-serif;
+  font-family: var(--secondary-font), serif;
   font-size: 1.1em;
   color: var(--primary-text);
 }
 
 body{
-  font-family: var(--secondary-font), sans-serif;
+  font-family: var(--secondary-font), serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: var(--primary-background);
+  background-color: var(--primary-text);
   padding-top: 76px; /* Account for fixed navbar height */
+}
+
+body, p, h4 {
+  font-family: var(--secondary-font) !important;  /* Ensure consistency across body, paragraphs, and h4 */
+  
 }
 
 /* Fixed navbar styles */
@@ -90,17 +96,17 @@ body{
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 350px; /* All cards same height */
+  height: 400px; /* Increased height for better content fit */
   border: none;
   background-color: transparent;
 }
 
 .card-body {
-  flex: 1 1 auto;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
   border: none;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -109,23 +115,77 @@ body{
   background-color: var(--primary-button);
 }
 
+.card-content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.card-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 .card-body:hover {
   transform: scale(1.05);
 }
 
 
-
 .card-footer {
   color: var(--secondary-button);
   margin: auto;
-
-
 }
 
+.card-title {
+  color: var(--secondary-button) !important;
+}
+
+.author {
+  font-size: 0.95em;
+  margin-top: 8px;
+  text-align: center;
+}
 
 
 .btn-primary {
   background-color: var(--highlight-color);
+}
+
+/* Styling for Login and Sign Up buttons in navigation bar */
+/* Makes them look clickable with rounded corners and smooth transitions */
+.nav-btn {
+  padding: 8px 20px !important;
+  border-radius: 25px; /* Rounded corners for modern look */
+  transition: all 0.3s ease; /* Smooth animation on hover */
+  margin: 0 5px;
+}
+
+/* Login button style - outlined with blue border */
+.nav-btn.btn-outline-primary {
+  border-color: var(--primary-text);
+  color: var(--primary-text);
+}
+
+/* Login button hover effect - fills in with blue and lifts up */
+.nav-btn.btn-outline-primary:hover {
+  background-color: var(--primary-text);
+  color: white;
+  transform: translateY(-2px); /* Lifts button up slightly */
+  box-shadow: 0 4px 8px rgba(0, 125, 192, 0.3); /* Adds shadow underneath */
+}
+
+/* Sign Up button style - filled with orange color */
+.nav-btn.btn-primary {
+  background-color: var(--highlight-color);
+  border-color: var(--highlight-color);
+  color: white;
+}
+
+/* Sign Up button hover effect - changes to different blue and lifts up */
+.nav-btn.btn-primary:hover {
+  background-color: var(--secondary-button);
+  border-color: var(--secondary-button);
+  transform: translateY(-2px); /* Lifts button up slightly */
+  box-shadow: 0 4px 8px rgba(247, 160, 114, 0.3); /* Adds shadow underneath */
 }
 
 .light-bg {
@@ -270,5 +330,91 @@ body{
     width: auto;
     padding:0;
     margin:0;
+
 }
+
+.no-fixed-height {
+  height: auto !important;
+}
+.no-fixed-height .card-body {
+  overflow: visible !important;
+}
+
+
+/* Media Queries */
+
+/* Mobile devices (max-width: 575px) */
+@media (max-width: 575px) {
+  /* Adjust container padding and font sizes */
+  .container, .container-fluid {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  h1, h2, h3, h4 {
+    font-size: 1.5em;
+  }
+  .card {
+    height: auto !important;
+    margin-bottom: 1rem;
+  }
+  .card-body {
+    padding: 0.5rem;
+  }
+  .navbar-brand img {
+    height: 32px;
+  }
+  .masthead {
+    height: 20vh;
+  }
+  .btn, .btn-lg, .btn-primary, .btn-signup {
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+  .post-title, .post-subtitle {
+    margin-left: 0;
+    margin-top: 5%;
+    font-size: 1.2em;
+  }
+  .comments {
+    font-size: 0.95em;
+  }
+}
+
+/* Tablets (min-width: 576px and max-width: 991px) */
+@media (min-width: 576px) and (max-width: 991px) {
+  .container, .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  h1, h2, h3, h4 {
+    font-size: 2em;
+  }
+  .card {
+    height: auto !important;
+  }
+  .masthead {
+    height: 25vh;
+  }
+  .navbar-brand img {
+    height: 36px;
+  }
+}
+
+/* Large devices (min-width: 992px) */
+@media (min-width: 992px) {
+  .container, .container-fluid {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  h1, h2, h3, h4 {
+    font-size: 2.5em;
+  }
+  .masthead {
+    height: 33vh;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+}
+
 
