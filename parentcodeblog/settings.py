@@ -12,7 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url  # PostgreSQL database adapter for Python
+
+import dj_database_url
+
 if os.path.isfile('env.py'):
     import env  # noqa: F401
 
@@ -30,10 +32,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = False
 
 
-ALLOWED_HOSTS = ['parent-code-app-e92a092d91bc.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'parent-code-app-e92a092d91bc.herokuapp.com',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -108,7 +113,9 @@ WSGI_APPLICATION = 'parentcodeblog.wsgi.application'
 #     }
 # }
 
-DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL")),
+}
 
 #  This is a list of the trusted origins for requests.
 # Allowing these origins to add blog post content from the admin dashboard.
@@ -166,7 +173,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 

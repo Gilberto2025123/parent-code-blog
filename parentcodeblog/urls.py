@@ -15,22 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import include, path
+
 from aboutus import views as aboutus_views
 
 # Main URL configuration for the entire site
 urlpatterns = [
-     # Landing page - first page visitors see
-     path('', aboutus_views.landing_page, name='landing_page'),
-     # About Us and Contact pages
-     path('aboutus/', include("aboutus.urls"), name="aboutus-urls"),
-     # User authentication (login, signup, logout)
-     path("accounts/", include("allauth.urls")),
-     # Admin panel
-     path('admin/', admin.site.urls),
-     # Rich text editor for admin
-     path('summernote/', include('django_summernote.urls')),
-     # Blog posts - only accessible when logged in
-     path('blog/', include('parentcodeapp.urls'), name='parentcode_urls'),
-   
+    # Landing page - first page visitors see
+    path('', aboutus_views.landing_page, name='landing_page'),
+    # About Us and Contact pages
+    path('aboutus/', include("aboutus.urls"), name="aboutus-urls"),
+    # User authentication (login, signup, logout)
+    path("accounts/", include("allauth.urls")),
+    # Admin panel
+    path('admin/', admin.site.urls),
+    # Rich text editor for admin
+    path('summernote/', include('django_summernote.urls')),
+    # Blog posts - only accessible when logged in
+    path('blog/', include('parentcodeapp.urls'), name='parentcode_urls'),
 ]

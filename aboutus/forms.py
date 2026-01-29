@@ -1,6 +1,7 @@
 from django import forms
 from .models import ContactForm
 
+
 class ContactFormModelForm(forms.ModelForm):
     class Meta:
         model = ContactForm
@@ -10,5 +11,4 @@ class ContactFormModelForm(forms.ModelForm):
             'email': 'Your Email',
             'subject': 'Subject',
             'message': 'Your Message',
-            
         }

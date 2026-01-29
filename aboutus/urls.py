@@ -1,5 +1,6 @@
-from . import views
 from django.urls import path
+
+from . import views
 
 # URL patterns for About Us section
 urlpatterns = [
