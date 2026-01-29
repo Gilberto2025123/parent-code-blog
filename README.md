@@ -110,7 +110,44 @@ Explain your website’s features such as navigation, pages, links, forms, input
 
 ## Technologies Used
 
-List all technologies, frameworks, and tools used in your project.
+### Development and Programming
+- **Python:** Core programming language used to implement back-end logic.
+- **Django:** Web framework used to structure the application and support rapid development.
+- **JavaScript:** Used to enhance interactivity and support front-end behaviour where required.
+- **HTML and CSS:** Used to structure and style the front-end interface.
+
+### Tools and Workflow
+- **Visual Studio Code (VS Code):** Primary integrated development environment used during implementation.
+- **Git and GitHub:** Used for version control and repository management.
+- **GitHub Projects (Kanban board):** Used to plan, prioritise, and monitor development tasks.
+- **Lucidchart:** Used to design and present the entity–relationship diagram (ERD).
+- **Magic ToDo Goblin Tools:** Used to break down tasks into manageable steps and support workflow planning.
+
+### Database and Hosting
+- **PostgreSQL:** Adopted for production deployment to support a scalable relational database environment.
+- **Heroku:** Platform used to deploy and host the live application.
+
+### Design and UI/UX
+- **Coolors:** Used to explore and refine colour palettes in support of a consistent visual design.
+- **Google Fonts:** Used to select typography aligned with branding and readability requirements.
+- **Font Awesome:** Used to incorporate consistent iconography across the user interface.
+- **Balsamiq:** Used to produce wireframes and iterate early user interface concepts.
+- **TinyPNG Converter:** Used to compress and optimise images to support performance and load times.
+- **Unsplash:** Used as a source of royalty-free imagery, where appropriate.
+
+### AI and Learning Resources
+- **GitHub Copilot:** Used to support development through code suggestions.
+- **ChatGPT:** Used to support problem-solving, documentation drafting, and project planning.
+- **CS50W Harvard Lectures:** Used to reinforce understanding of web application development concepts and best practices.
+- **YouTube Tutorials:** Used to supplement learning and inform implementation approaches where appropriate.
+
+### Validation and Standards
+- **W3C Validator:** Used to validate HTML for semantic structure and accessibility considerations.
+- **Jigsaw CSS Validator:** Used to verify CSS compliance and identify errors.
+- **JSHint:** Used to validate JavaScript code quality and identify potential issues.
+- **PEP 8 Validator:** Used to ensure Python code consistency, readability, and adherence to style conventions.
+- **Google Lighthouse:** Used to audit performance, accessibility, SEO, and adherence to best practices on the deployed site.
+
 
 ---
 
