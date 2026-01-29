@@ -262,16 +262,16 @@ If any remain unresolved, document them here.
 This website is deployed to Heroku from a GitHub repository.  
 Follow these steps:
 
-### Creating Repository on GitHub
+### Creating a Repository on GitHub
 
-1. Sign into GitHub and go to the Code Institute’s template.
+1. Sign in to GitHub and go to the Code Institute’s template.
 2. Click **Use this template** then **Create a new repository**.
 3. Enter a name for the repository and click **Create repository from template**.
 4. Click the green **Gitpod** button to open a workspace and begin development.
 
 ### Creating an App on Heroku 
 
-  1. After creating the repository, sign into Heroku.
+  1. After creating the repository, sign in to Heroku.
   2. Click **New** then **Create new app**.
   3. Enter a unique app name and select a region (for example, Europe).
   4. Click **Create app**.
@@ -279,7 +279,7 @@ Follow these steps:
 
 ### Create a Database
 
-  1. Log into PostgreSQL.
+  1. Log into PostgreSQL(CIdatabase maker).
   2. Add your email address and submit the form.
   3. Open the database link sent to your email.
   4. Copy the database URL and paste it into:
