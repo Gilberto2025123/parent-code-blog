@@ -58,45 +58,45 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment: {self.content} by {self.author}"
 
-    
-class Bookmarks(models.Model):
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="parentcodeapp_bookmarks"
-    )
-    post = models.ForeignKey(
-        Post, on_delete=models.CASCADE, related_name="parentcodeapp_bookmarks"
-    )
-    created_at = models.DateTimeField(auto_now_add=True)
+# Models for Bookmarks, JobPost, and MyProfile have been commented out for future use.
+# class Bookmarks(models.Model):
+#     user = models.ForeignKey(
+#         User, on_delete=models.CASCADE, related_name="parentcodeapp_bookmarks"
+#     )
+#     post = models.ForeignKey(
+#         Post, on_delete=models.CASCADE, related_name="parentcodeapp_bookmarks"
+#     )
+#     created_at = models.DateTimeField(auto_now_add=True)
 
-    class Meta:
-        ordering = ["-created_at"]
+#     class Meta:
+#         ordering = ["-created_at"]
 
-    def __str__(self):
-        return f"Blog saved by {self.user}"
-
-
-class JobPost(models.Model):
-    title = models.CharField(max_length=200)
-    company = models.CharField(max_length=200)
-    location = models.CharField(max_length=200)
-    description = models.TextField()
-    apply_link = models.URLField(max_length=200)
-    created_at = models.DateTimeField(auto_now_add=True)
-    posted_by = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="parentcodeapp_jobs"
-    )
-    slug = models.SlugField(max_length=200, unique=True)
-
-    class Meta:
-        ordering = ["-created_at"]
-
-    def __str__(self):
-        return f"{self.title} at {self.company}"
+#     def __str__(self):
+#         return f"Blog saved by {self.user}"
 
 
-class MyProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    bio = models.TextField(blank=True)
+# class JobPost(models.Model):
+#     title = models.CharField(max_length=200)
+#     company = models.CharField(max_length=200)
+#     location = models.CharField(max_length=200)
+#     description = models.TextField()
+#     apply_link = models.URLField(max_length=200)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     posted_by = models.ForeignKey(
+#         User, on_delete=models.CASCADE, related_name="parentcodeapp_jobs"
+#     )
+#     slug = models.SlugField(max_length=200, unique=True)
 
-    def __str__(self):
-        return f"{self.user.username}'s profile"
+#     class Meta:
+#         ordering = ["-created_at"]
+
+#     def __str__(self):
+#         return f"{self.title} at {self.company}"
+
+
+# class MyProfile(models.Model):
+#     user = models.OneToOneField(User, on_delete=models.CASCADE)
+#     bio = models.TextField(blank=True)
+
+#     def __str__(self):
+#         return f"{self.user.username}'s profile"
