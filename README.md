@@ -2,6 +2,8 @@
 
 This site was submitted as part of Code Institute's final project, utilising Django, Python, JavaScript, HTML, and CSS. This site is a blog that is dedicated to helping those on the parenthood journey navigate the challenges and joys of being a parent in the tech sector.
 
+
+
 ---
 
 ## Design and Planning
@@ -11,8 +13,17 @@ This site was submitted as part of Code Institute's final project, utilising Dja
 Write your user stories in this section.
 
 ---
+### Agile Methodology
 
-## Wireframes and ERD
+  <img width="1492" height="799" alt="Screenshot 2025-10-13 at 06 20 49" src="https://github.com/user-attachments/assets/38e53713-e1ae-49d6-a604-3600d9503abb" />
+  <img width="1491" height="805" alt="Screenshot 2025-10-06 at 22 09 19" src="https://github.com/user-attachments/assets/72a58fa4-c4b7-4f35-bc5f-63c3ee19041e" />
+  <img width="1495" height="814" alt="Screenshot 2025-10-13 at 12 31 42" src="https://github.com/user-attachments/assets/a52e3385-d37e-446a-821d-b92748cf67ae" />
+
+  Explain your agile approach to your project and insert screenshots of your Kanban board (iterations, user stories, tasks, acceptance criteria, labels, story points).
+
+---
+
+### Wireframes
 
 <img width="967" height="813" alt="Desktop" src="https://github.com/user-attachments/assets/1a30eab1-27c5-406e-89d0-4913598f06b1" />
 
@@ -20,91 +31,67 @@ Write your user stories in this section.
 
 <img width="436" height="867" alt="Mobile view" src="https://github.com/user-attachments/assets/370c63be-8db8-4c7f-8965-1a64758483d2" />
 
----
-
-<details>
-  <summary>Agile Methodology</summary>
-
-  <img width="1492" height="799" alt="Screenshot 2025-10-13 at 06 20 49" src="https://github.com/user-attachments/assets/38e53713-e1ae-49d6-a604-3600d9503abb" />
-  <img width="1491" height="805" alt="Screenshot 2025-10-06 at 22 09 19" src="https://github.com/user-attachments/assets/72a58fa4-c4b7-4f35-bc5f-63c3ee19041e" />
-  <img width="1495" height="814" alt="Screenshot 2025-10-13 at 12 31 42" src="https://github.com/user-attachments/assets/a52e3385-d37e-446a-821d-b92748cf67ae" />
-
-  Explain your agile approach to your project and insert screenshots of your Kanban board (iterations, user stories, tasks, acceptance criteria, labels, story points).
-</details>
 
 ---
 
-<details>
-  <summary>Typography</summary>
+### Typography
 
   <img width="1483" height="678" alt="Screenshot 2025-10-13 at 13 45 27" src="https://github.com/user-attachments/assets/093f4029-4627-4503-aaac-7c44de838925" />
 
   Explain the font(s) you've used for your project.
-</details>
+
 
 ---
-
-<details>
-  <summary>Colour Scheme</summary>
+  ### Colour Scheme
 
   <img width="1600" height="1200" alt="Parent Code" src="https://github.com/user-attachments/assets/504d3434-741e-45a5-8fac-7fd6ec593e6d" />
 
   Include a screenshot of the colour scheme for your project.
-</details>
 
 ---
 
-<details>
-  <summary>Database Diagram</summary>
-
-  Include an image of your database diagram.
+ ### Database Diagram ERD)
 
   List your models and describe how they are connected.
 
   <img width="2283" height="1268" alt="Parent Code ERD" src="https://github.com/user-attachments/assets/0c7656ab-4dec-43b3-a2d1-5b9edc21f901" />
-</details>
+
 
 ---
+
 
 ## Features
 
 Explain your website’s features such as navigation, pages, links, forms, input fields, and CRUD operations.
-
-<details>
-  <summary>Navigation</summary>
+### Navigation
 
   Describe your navigation bar and links.
-</details>
 
-<details>
-  <summary>Footer</summary>
+### Footer
 
   Describe your footer contents and functionality.
-</details>
 
-<details>
-  <summary>Home Page</summary>
+### Landing Page
 
   Explain the purpose and layout of your home page.
-</details>
 
-<details>
-  <summary>Additional Pages</summary>
 
-  Describe any other pages in your project.
-</details>
-
-<details>
-  <summary>CRUD</summary>
+### Additional Pages
+Describe any other pages in your project.
+#### About Us
+#### Contact Us 
+#### Blog Page 
+  
+  
+### CRUD 
 
   Explain how Create, Read, Update, and Delete functionalities work in your project.
-</details>
 
-<details>
-  <summary>Authentication and Authorisation</summary>
+#### Authentication and Authorisation
 
-  Explain how user authentication and permissions are handled.
-</details>
+  - User authentication with secure registration and login
+  - Admin functionality for managing task data and user accounts
+
 
 ---
 
@@ -131,13 +118,15 @@ Explain your website’s features such as navigation, pages, links, forms, input
 - **Coolors:** Used to explore and refine colour palettes in support of a consistent visual design.
 - **Google Fonts:** Used to select typography aligned with branding and readability requirements.
 - **Font Awesome:** Used to incorporate consistent iconography across the user interface.
+- **Bootstrap:** For responsive design and styling.
 - **Balsamiq:** Used to produce wireframes and iterate early user interface concepts.
 - **TinyPNG Converter:** Used to compress and optimise images to support performance and load times.
 - **Unsplash:** Used as a source of royalty-free imagery, where appropriate.
 
 ### AI and Learning Resources
-- **GitHub Copilot:** Used to support development through code suggestions.
-- **ChatGPT:** Used to support problem-solving, documentation drafting, and project planning.
+- **VSCode Copilot:** Used to support development through code suggestions and debugging.
+- **ChatGPT:** Used to support problem-solving, documentation drafting, and project planning, logo design
+- **Perplexity:** Used for collecting post content with real-world references. 
 - **CS50W Harvard Lectures:** Used to reinforce understanding of web application development concepts and best practices.
 - **YouTube Tutorials:** Used to supplement learning and inform implementation approaches where appropriate.
 
@@ -151,21 +140,30 @@ Explain your website’s features such as navigation, pages, links, forms, input
 
 ---
 
-## Libraries
+## Testing
 
-List all external libraries or packages used.
+### Google Lighthouse Performance
+
+#### Mobile
+
+#### Desktop
+
+---
+## Manual Testing – User Stories
+
+| User Story | Test | Pass | Screenshot |
+|---|---|---|---|
+| Paste your user story here | Describe what is visible to the user and what action they should perform | Yes | Attach screenshot |
 
 ---
 
-## Testing
+## Manual Testing – Features
 
-This is an important part of your README.
+| Feature | Action | Status | Screenshot |
+|---|---|---|---|
+| Feature description | User steps | Complete | Attach screenshot |
 
-<details>
-  <summary>Google Lighthouse Performance</summary>
-
-  Include screenshots of performance scores (mobile and desktop).
-</details>
+---
 
 ### Browser Compatibility
 
@@ -225,6 +223,7 @@ This is an important part of your README.
 | Responsiveness | Success | Success |
 | Open new page from social media links | Success | Success |
 
+
 ##### Safari
 | Test | Expected Result | Actual Result |
 |---|---|---|
@@ -243,30 +242,11 @@ This is an important part of your README.
 | Responsiveness | Success | Success |
 | Open new page from social media links | Success | Success |
 
-<details>
-  <summary>Code Validation</summary>
+### Code Validation
 
   Validate your HTML, CSS, JS, and Python code (all files).
   Include validation screenshots.
-</details>
 
----
-
-## Manual Testing – User Stories
-
-| User Story | Test | Pass | Screenshot |
-|---|---|---|---|
-| Paste your user story here | Describe what is visible to the user and what action they should perform | Yes | Attach screenshot |
-
----
-
-## Manual Testing – Features
-
-| Feature | Action | Status | Screenshot |
-|---|---|---|---|
-| Feature description | User steps | Complete | Attach screenshot |
-
----
 
 ## Bugs
 
@@ -289,17 +269,15 @@ Follow these steps:
 3. Enter a name for the repository and click **Create repository from template**.
 4. Click the green **Gitpod** button to open a workspace and begin development.
 
-<details>
-  <summary>Creating an App on Heroku</summary>
+### Creating an App on Heroku 
 
   1. After creating the repository, sign into Heroku.
   2. Click **New** then **Create new app**.
   3. Enter a unique app name and select a region (for example, Europe).
   4. Click **Create app**.
-</details>
 
-<details>
-  <summary>Create a Database</summary>
+
+### Create a Database
 
   1. Log into PostgreSQL.
   2. Add your email address and submit the form.
@@ -307,10 +285,9 @@ Follow these steps:
   4. Copy the database URL and paste it into:
      - `DATABASE_URL` variable in `env.py`
      - Heroku Config Vars
-</details>
 
-<details>
-  <summary>Deploying to Heroku</summary>
+
+### Deploying to Heroku 
 
   1. Go to your app in Heroku and open the **Settings** tab.
   2. Scroll to **Config Vars** and set:
@@ -324,7 +301,7 @@ Follow these steps:
   6. Once deployment finishes, click **View App** to open your live site.
 
   Note: When deploying manually, redeploy after each repository update.
-</details>
+
 
 ---
 
