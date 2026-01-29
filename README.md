@@ -1,7 +1,7 @@
 ### Parent Code Blog App
 This site was submitted as part of CodeInstitute's final project, utilising Django, Python, JavaScript, HTML, and CSS. This site is a blog that is dedicated to helping those on the parenthood journey navigate the challenges and joys of being a parent in the tech sector. 
 
-<img width="1132" height="706" alt="Screenshot 2025-10-13 at 13 55 43" src="https://github.com/user-attachments/assets/3f73e632-4c13-489d-be21-601e29aa87c5" />
+
 
 # 🧭 Design & Planning
 
@@ -14,7 +14,6 @@ Write your user stories in this section.
 
 ---
 
-<details>
 <summary><h2>Wireframes & ERD </h2></summary>
 <img width="967" height="813" alt="Desktop" src="https://github.com/user-attachments/assets/1a30eab1-27c5-406e-89d0-4913598f06b1" />
 
@@ -22,10 +21,9 @@ Write your user stories in this section.
 
 <img width="436" height="867" alt="Mobile view" src="https://github.com/user-attachments/assets/370c63be-8db8-4c7f-8965-1a64758483d2" />
 
-Attach wireframes in this section.
 
 
-</details>
+
 
 ---
 
@@ -66,6 +64,9 @@ Include a screenshot of the colour scheme for your project.
 <summary><h2>Database Diagram</h2></summary>
 
 Include an image of your database diagram.  
+
+
+
 List your models and describe how they are connected.
 
 <img width="2283" height="1268" alt="Parent Code ERD  (2)" src="https://github.com/user-attachments/assets/0c7656ab-4dec-43b3-a2d1-5b9edc21f901" />
@@ -144,6 +145,8 @@ List all external libraries or packages used.
 
 This is an **important part** of your README!
 
+
+
 <details>
 <summary><h3>Google Lighthouse Performance</h3></summary>
 
@@ -154,10 +157,79 @@ Include screenshots of performance scores (mobile and desktop).
 <details>
 <summary><h3>Browser Compatibility</h3></summary>
 
-Test and list which browsers your website works with.
+## Cross-browser testing
 
-</details>
+### Chrome
+| Test | Expected Result | Actual Result |
+|---|---|---|
+| Click Logo/Landing Page | Success | Success |
+| Click About Us Page | Success | Success |
+| Click Contact Us Page | Success | Success |
+| Click Blog Page | Success | Success |
+| Click Login/Logout | Success | Success |
+| Click Sign Up/Register for new account | Success | Success |
+| Click Explore Posts | Success | Success |
+| Click Individual Blog Post/Read | Success | Success |
+| Click Back to Blog button | Success | Success |
+| Create, Update/Edit and Delete Personal Comment | Success | Success |
+| Click Next and Previous Navigation buttons | Success | Success |
+| Access admin interface | Success | Success |
+| Responsiveness | Success | Success |
+| Open new page from social media links | Success | Success |
 
+### Firefox
+| Test | Expected Result | Actual Result |
+|---|---|---|
+| Click Logo/Landing Page | Success | Success |
+| Click About Us Page | Success | Success |
+| Click Contact Us Page | Success | Success |
+| Click Blog Page | Success | Success |
+| Click Login/Logout | Success | Success |
+| Click Sign Up/Register for new account | Success | Success |
+| Click Explore Posts | Success | Success |
+| Click Individual Blog Post/Read | Success | Success |
+| Click Back to Blog button | Success | Success |
+| Create, Update/Edit and Delete Personal Comment | Success | Success |
+| Click Next and Previous Navigation buttons | Success | Success |
+| Access admin interface | Success | Success |
+| Responsiveness | Success | Success |
+| Open new page from social media links | Success | Success |
+
+### Edge
+| Test | Expected Result | Actual Result |
+|---|---|---|
+| Click Logo/Landing Page | Success | Success |
+| Click About Us Page | Success | Success |
+| Click Contact Us Page | Success | Success |
+| Click Blog Page | Success | Success |
+| Click Login/Logout | Success | Success |
+| Click Sign Up/Register for new account | Success | Success |
+| Click Explore Posts | Success | Success |
+| Click Individual Blog Post/Read | Success | Success |
+| Click Back to Blog button | Success | Success |
+| Create, Update/Edit and Delete Personal Comment | Success | Success |
+| Click Next and Previous Navigation buttons | Success | Success |
+| Access admin interface | Success | Success |
+| Responsiveness | Success | Success |
+| Open new page from social media links | Success | Success |
+
+### Safari
+| Test | Expected Result | Actual Result |
+|---|---|---|
+| Click Logo/Landing Page | Success | Success |
+| Click About Us Page | Success | Success |
+| Click Contact Us Page | Success | Success |
+| Click Blog Page | Success | Success |
+| Click Login/Logout | Success | Success |
+| Click Sign Up/Register for new account | Success | Success |
+| Click Explore Posts | Success | Success |
+| Click Individual Blog Post/Read | Success | Success |
+| Click Back to Blog button | Success | Success |
+| Create, Update/Edit and Delete Personal Comment | Success | Success |
+| Click Next and Previous Navigation buttons | Success | Success |
+| Access admin interface | Success | Success |
+| Responsiveness | Success | Success |
+| Open new page from social media links | Success | Success |
 
 
 <details>
