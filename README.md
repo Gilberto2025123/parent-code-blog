@@ -75,7 +75,7 @@ https://parent-code-app-e92a092d91bc.herokuapp.com/
 ### User Stories
 The user stories were created with busy parents in mind, providing a quick and efficient way to connect with others in the tech sector. Use the issue number links in the table to view the acceptance criteria.
 
-| Priority | Issue | User Story |
+| MoSCoW Priority | Issue | User Story |
 | --- | --- | --- |
 | Must | [#1](https://github.com/Gilberto2025123/parent-code-blog/issues/1) | As a parent working in tech, I can create a comment on a blog post so that I can share advice or experiences with  |
 | Must | [#2](https://github.com/Gilberto2025123/parent-code-blog/issues/2) | As a site user, I can view a paginated list of posts so that I can select which post I want to view. |
@@ -86,7 +86,7 @@ The user stories were created with busy parents in mind, providing a quick and e
 | Must | [#7](https://github.com/Gilberto2025123/parent-code-blog/issues/7) | As a site user, I can comment on blog posts so that I can contribute to the discussion.  |
 | Must | [#8](https://github.com/Gilberto2025123/parent-code-blog/issues/8) | As a site user, I can like blog posts so that I can show appreciation for helpful content. |
 | Must | [#9](https://github.com/Gilberto2025123/parent-code-blog/issues/9)  | As a site user, I see success notifications after completing actions so that I know my action worked.  |
-| Could | [#10](https://github.com/Gilberto2025123/parent-code-blog/issues/10) | As a site user, I can bookmark posts so that I can read them later. :contentReference[oaicite:19]{index=19} |
+| Could | [#10](https://github.com/Gilberto2025123/parent-code-blog/issues/10) | As a site user, I can bookmark posts so that I can read them later.|
 | Could | [#11](https://github.com/Gilberto2025123/parent-code-blog/issues/11) | As a site user, I can share posts to social media so that I can spread valuable advice.  |
 | Should | [#12](https://github.com/Gilberto2025123/parent-code-blog/issues/12) | As a new site user, I can register and log in so that I can create posts and interact with others. |
 | Should | [#13](https://github.com/Gilberto2025123/parent-code-blog/issues/13)  | As a parent in tech, I can have a profile page so that I can share my background with the community.  |
@@ -270,7 +270,7 @@ Users using the back-end Django framework and Bootstrap design are now able to s
 - **Perplexity:** Used for collecting post content with real-world references. 
 - **CS50W Harvard Lectures:** Used to reinforce understanding of web application development concepts and best practices.
 - **YouTube Tutorials:** Used to supplement learning and inform implementation approaches where appropriate.
-- **W3Schools:** Used to troubleshoot and problem solve. 
+- **W3Schools:** Used to troubleshoot and problem-solve. 
 
 ### Validation and Standards
 - **W3C Validator:** Used to validate HTML for semantic structure and accessibility considerations.
@@ -318,7 +318,7 @@ The website passed its performance testing using Google Lighthouse to ensure acc
 | As a site user, I would like to send private messages to other parents so that I can connect more personally. | Navigate to user profiles (if available). Confirm there is **no** private messaging feature available (no message button/inbox). | No - feature not yet developed |
 | As a site user, I can use the app across devices and browsers so that I can access content easily. | Test core pages (home, posts list, post detail, login/register) on multiple browsers (e.g., Chrome/Firefox/Edge/Safari) and at different screen sizes (mobile/tablet/desktop). Confirm layout is responsive and key actions work without visual or functional issues. | Yes |
 | As a site user, I would like AI suggestions for parenting and tech advice so that I get instant guidance. | Confirm there is **no** AI suggestions feature present in the UI (no AI button/panel/auto-suggestions area). | No - feature not yet developed|
-| As a user, I must be notified when I have not accessed the correct webpage so that I can find the correct deployed link. | Enter an invalid URL route (e.g., `/randompage`). Confirm a clear error page/message appears (404 or custom), guiding users to the correct page/link (e.g., home button). | Yes |
+| As a user, I must be notified when I have not accessed the correct webpage so that I can find the correct deployed link. | Enter an invalid URL route. Confirm a clear error page/message appears (404 or custom), guiding users to the correct page/link (e.g., home button). | Yes |
 | As a Site Admin, I can approve or disapprove comments so that I can filter out objectionable comments. | Log in as admin. Go to the admin panel. Locate a pending comment and approve it. Confirm it appears publicly. Disapprove/delete another comment and confirm it does not appear publicly. | Yes |
 | As a user, I want to access an "About Us" page to discover more information about the website. | From the navigation/menu/footer, click **About Us**. Confirm the page loads and displays relevant site information. Test direct URL access to the About page as well. | Yes |
 
@@ -474,9 +474,9 @@ All Python code was tested, and results show no errors were found, utilising the
 ### 500 Server Error 
 
 <img width="475" height="84" alt="Screenshot 2025-10-13 at 14 04 27" src="https://github.com/user-attachments/assets/560699a9-ede3-4588-81ea-44bdb22e07d8" />
-This was the major issue with my initial submission of the project as it prevented much of the site to function. This was especially true when loading the page, attempting to sign up/ login to the admin site. 
 
-To resolve this, I contacted my facilitator at the Code Institute, who helped provide feedback on how to test iteratively. I then utilised Chrome Developer Tools and AI to identify where the source of the problem was and discovered that it had been an issue in the base HTML file, and the site was trying to authenticate before the new user was saved and using request.POST.get('field') instead of the form’s cleaned data. I made changes to views/forms and the template to fix this.  It now runs as intended. 
+
+This was the major issue with my initial submission of the project as it prevented much of the site to function. This was especially true when loading the page, attempting to sign up/ login to the admin site. To resolve this, I contacted my facilitator at the Code Institute, who helped provide feedback on how to test iteratively. I then utilised Chrome Developer Tools and AI to identify where the source of the problem was and discovered that it had been an issue in the base HTML file, and the site was trying to authenticate before the new user was saved and using request.POST.get('field') instead of the form’s cleaned data. I made changes to views/forms and the template to fix this.  It now runs as intended. 
 
 
 ---
