@@ -154,10 +154,10 @@ Describe any other pages in your project.
 <img width="1512" height="982" alt="ContactUs ParentCode" src="https://github.com/user-attachments/assets/e780894c-acfa-4350-84e2-7600a5272de9" />
 
 #### Blog Pages
-##### Main blog page 
+##### Main Blog page 
 <img width="1512" height="982" alt="Login Success Notification Blog Page" src="https://github.com/user-attachments/assets/27990d45-92cc-41fe-9862-e0abbecc7376" />
-##### Individual Blog page 
 
+##### Individual Blog page 
 <img width="1508" height="859" alt="Individual Blog Post 1" src="https://github.com/user-attachments/assets/d4c66ddf-7522-44d9-bad4-e9451d2b0001" />
 
   <img width="1491" height="862" alt="Individual Blog Post 2" src="https://github.com/user-attachments/assets/89866a31-80cc-4692-976c-4f5afead7173" />
@@ -184,11 +184,12 @@ Describe any other pages in your project.
 <img width="1507" height="854" alt="CRUD - Comment Deleted notification" src="https://github.com/user-attachments/assets/7b0579c1-6b80-410d-8573-f1d7ef7cdddb" />
 
 #### Authentication and Authorisation
+Users using the back-end Django framework and Bootstrap design are now able to sign up confidently to the site. The Admin also has authentication and authorisation tools as shown below. 
 
-  - User authentication with secure registration and login
+  -  Admin User authentication with secure registration and login
     <img width="1512" height="982" alt="Django Admin (Users)" src="https://github.com/user-attachments/assets/64eaf95a-c12b-47c9-b262-a49d2266a270" />
 
-  - Admin functionality for managing task data and user accounts
+  - Admin functionality for managing user data, comments, and user accounts
 <img width="1512" height="982" alt="Django Admin " src="https://github.com/user-attachments/assets/79441d28-7b18-4173-a529-1ed4123d6122" />
 <img width="1512" height="982" alt="Django Admin Interface" src="https://github.com/user-attachments/assets/50bfebfb-7bb4-4a25-a5d6-fdb8c26a5d01" />
 
@@ -221,7 +222,7 @@ Describe any other pages in your project.
 - **Bootstrap:** For responsive design and styling.
 - **Balsamiq:** Used to produce wireframes and iterate early user interface concepts.
 - **TinyPNG Converter:** Used to compress and optimise images to support performance and load times.
-- **Unsplash:** Used as a source of royalty-free imagery, where appropriate.
+- **Pexels:** Used as a source of royalty-free imagery, where appropriate.
 
 ### AI and Learning Resources
 - **VSCode Copilot:** Used to support development through code suggestions and debugging.
@@ -243,6 +244,7 @@ Describe any other pages in your project.
 ## Testing
 
 ### Google Lighthouse Performance
+The website passed its performance testing using Google Lighthouse to ensure accessibility for all. This shows that the application is fully responsive across all media devices. 
 
 #### Mobile
 <img width="986" height="817" alt="Screenshot 2026-01-30 at 01 15 30" src="https://github.com/user-attachments/assets/6f09b55e-be09-494b-a35a-83c1cc4179fe" />
@@ -270,6 +272,7 @@ Describe any other pages in your project.
 ### Browser Compatibility
 
 #### Cross-browser testing
+I used a website called Browserling: https://www.browserling.com/ (It gives you 3 minutes at a time to test the features of the website on different web browsers. This is especially useful if you do not have a Windows system. 
 
 ##### Chrome
 | Test | Expected Result | Actual Result |
@@ -345,6 +348,7 @@ Describe any other pages in your project.
 | Open new page from social media links | Success | Success |
 
 ### Code Validation
+Code validation was carried out to ensure the integrity of the code and compliance with PEP8 guidelines, HTML, CSS and JavaScript standards. This enabled the code to be accessible on testing and deployment. 
 
 #### HTML 
 <img width="1495" height="582" alt="HTML Validation ParentCode" src="https://github.com/user-attachments/assets/995f33ec-f3a3-4d24-83ec-befeaf99f84b" />
@@ -353,19 +357,36 @@ Describe any other pages in your project.
 <img width="1482" height="859" alt="CSS Validation ParentCode" src="https://github.com/user-attachments/assets/d4028dec-6351-45bd-9285-ba6149b71834" />
 
 #### JavaScript 
+To test the code, I used the JS Hint website. 
 <img width="1512" height="864" alt="JavaScript Test" src="https://github.com/user-attachments/assets/a099f912-6a62-4f1f-9ecb-0f316e99f01f" />
 
 #### Python 
-  
- 
+All Python code was tested, and results show no errors were found, utilising the CI Python Linter. Below are a few screenshots to show sections of the code with their results. 
+
+<img width="1327" height="682" alt="Models py Test(Pass)" src="https://github.com/user-attachments/assets/4584743e-b3fa-4027-a80c-0b9aeec2d14f" />
+
+<img width="1223" height="677" alt="Models py Test 2 " src="https://github.com/user-attachments/assets/96de84f9-7fd8-4b85-b2d6-eba2a93cb58c" />
+
+<img width="1322" height="649" alt="Views py Test" src="https://github.com/user-attachments/assets/8df050dc-66d1-40b4-b8e9-572ad01eda47" />
+
+ <img width="1227" height="716" alt="Urls py Test" src="https://github.com/user-attachments/assets/f469c2f2-03cc-4f36-9409-b0e6b2b1e514" />
+
+ <img width="1130" height="395" alt="Urls py Test 2 " src="https://github.com/user-attachments/assets/84579a49-054f-432b-9b98-579651885f29" />
+
+ <img width="1152" height="656" alt="Forms py Test" src="https://github.com/user-attachments/assets/fe56707d-8d29-422a-ac48-a596059fd790" />
+
+<img width="1156" height="644" alt="Admin py Test" src="https://github.com/user-attachments/assets/268d02c9-a73d-4984-b11f-a1b880a8ede2" />
+
 
 
 ## Bugs
 
-List all bugs found and how they were fixed.  
-If any remain unresolved, document them here.
-
+### 500 Server Error 
 <img width="475" height="84" alt="Screenshot 2025-10-13 at 14 04 27" src="https://github.com/user-attachments/assets/560699a9-ede3-4588-81ea-44bdb22e07d8" />
+ This was the major issue with my initial submission of the project as it prevented much of the site to function. This was especially true when loading the page, attempting to sign up/ login to the admin site. 
+
+To resolve this, I contacted my facilitator at the Code Institute, who helped provide feedback on how to test iteratively. I then utilised Chrome Developer Tools and AI to identify where the source of the problem was and discovered that it had been an issue in the base HTML file, and the site was trying to authenticate before the new user was saved and using request.POST.get('field') instead of the form’s cleaned data. I made changes to views/forms and the template to fix this.  It now runs as intended. 
+
 
 ---
 
@@ -401,6 +422,8 @@ Follow these steps:
 
 ### Deploying to Heroku 
 
+<img width="1512" height="828" alt="Deployment Screenshot" src="https://github.com/user-attachments/assets/dd259ff3-4338-4fdb-a5c2-ea10a697ffbf" />
+
   1. Go to your app in Heroku and open the **Settings** tab.
   2. Scroll to **Config Vars** and set:
      - `DATABASE_URL` (your database URL)
@@ -412,17 +435,46 @@ Follow these steps:
   5. Scroll to **Manual Deploy** and click **Deploy Branch**.
   6. Once deployment finishes, click **View App** to open your live site.
 
-  Note: When deploying manually, redeploy after each repository update.
+  **Note:** When deploying manually, redeploy after each repository update.
 
 
 ---
 
 ## Credits
 
-List all resources used in your project:
+**Personal Note:** 
+I'd like to thank my wife and baby daughter for their patience and support for me throughout this journey. It wasn't easy, but having you both by my side has made each moment worth fighting through. 
 
-- Code Star Walkthrough project
-- Kaleidoscope Learning Project
-- Dev Hawks Quiz Project
+Another thank you to the course convenors and facilitators at the Code Institute(you know who you are), for the resources and sessions and the personal help received in moments of crisis. 
+
+I also send a huge thank you to my cohort group, where I not only made professional links but genuine friendships along the way! Thank you for pushing me again, you know who you are!
+
+### Resources Used:
+
+### AI 
+AI was an instrumental tool that helped me to debug errors during development, planning and testing phases. I utilised a variety of LLM's to diversify the quality of the code and to ensure I was building appropriately. I have used it to generate User story ideas, which were edited to suit my specific desire and brief for the project, and find relevant content for some of the posts with reference to real-world events. 
+
+### Code 
+- Code Institute Learning Management System - Used to recap coding concepts on HTML, CSS, JavaScript, Python, and Databases. 
+- Code Star Walkthrough project - This was a major tool in building the entire site, as step-by-step instructions were presented, especially when tackling more of the back-end technical aspects of Django, PostgreSQL, and deployment.  
+- Kaleidoscope Learning Project - Used for some of the CSS Styling  
+- Dev Hawks Quiz Project - Used for some of the CSS Styling
+  
+### YouTube/Media Tutorials
+- CS50W Lecture 2 -  Python: https://www.youtube.com/watch?v=EOLPQdVj5Ac&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=4
+- CS50W Lecture 3 -  Django: https://www.youtube.com/watch?v=w8q0C-C1js4&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=6
+- CS50W Lecture 4 -  SQL, Models and Migrations: https://www.youtube.com/watch?v=YzP164YANAU&t=2s
+- CS50W Lecture 5 - JavaScript: https://www.youtube.com/watch?v=x5trGVMKTdY&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=7
+
+### Images
+Most images were sourced using Pexels. I added a personal image for the About Us page, and the logo was an AI-generated design with a specific prompt that required using the colour palette to facilitate consistency and a strong theme across the app.  
+
+- **Logo**: AI-generated design. 
+
+- Image used as a placeholder for all blog posts: 
+![pexels-mikael-blomkvist-6476783](https://github.com/user-attachments/assets/89ea2944-6b13-446b-b5b4-616ebd87c30b) - Photo by Mikael Blomkvist from Pexels: https://www.pexels.com/photo/a-woman-in-red-long-sleeve-shirt-6476783/
+
+
+
 
 
