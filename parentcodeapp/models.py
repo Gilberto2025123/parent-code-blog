@@ -58,13 +58,14 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment: {self.content} by {self.author}"
 
-# Models for Bookmarks, JobPost, and MyProfile have been commented out for future use.
+# Models for Bookmarks, JobPost, and MyProfile
+# (for future implementation).
 # class Bookmarks(models.Model):
 #     user = models.ForeignKey(
-#         User, on_delete=models.CASCADE, related_name="parentcodeapp_bookmarks"
+#        User, on_delete=models.CASCADE, related_name="parentcodeapp_bookmarks"
 #     )
 #     post = models.ForeignKey(
-#         Post, on_delete=models.CASCADE, related_name="parentcodeapp_bookmarks"
+#        Post, on_delete=models.CASCADE, related_name="parentcodeapp_bookmarks"
 #     )
 #     created_at = models.DateTimeField(auto_now_add=True)
 
