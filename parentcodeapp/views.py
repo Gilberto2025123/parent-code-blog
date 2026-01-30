@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-# from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic
 
@@ -11,22 +11,22 @@ from .forms import CommentForm
 # These require users to be logged in to access
 
 
-# @login_required
-# def my_profile(request):
-#     """Display user profile page - placeholder for now"""
-#     return render(request, "parentcodeapp/my_profile.html")
+@login_required
+def my_profile(request):
+    """Display user profile page - placeholder for now"""
+    return render(request, "parentcodeapp/my_profile.html")
 
 
-# @login_required
-# def job_postings(request):
-#     """Display job postings page - placeholder for now"""
-#     return render(request, "parentcodeapp/job_postings.html")
+@login_required
+def job_postings(request):
+    """Display job postings page - placeholder for now"""
+    return render(request, "parentcodeapp/job_postings.html")
 
 
-# @login_required
-# def my_bookmarks(request):
-#     """Display user's bookmarked posts - placeholder for now"""
-#     return render(request, "parentcodeapp/my_bookmarks.html")
+@login_required
+def my_bookmarks(request):
+    """Display user's bookmarked posts - placeholder for now"""
+    return render(request, "parentcodeapp/my_bookmarks.html")
 
 
 # Main blog views
