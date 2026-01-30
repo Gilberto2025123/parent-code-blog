@@ -30,6 +30,7 @@ https://parent-code-app-e92a092d91bc.herokuapp.com/
   - [Additional Pages](#additional-pages)
     - [About Us](#about-us)
     - [Contact Us](#contact-us)
+    - [Sign Up](#sign-up)
     - [Blog Page](#blog-page)
   - [CRUD](#crud)
     - [Authentication and Authorisation](#authentication-and-authorisation)
@@ -72,23 +73,53 @@ https://parent-code-app-e92a092d91bc.herokuapp.com/
 ## Design and Planning
 
 ### User Stories
+The user stories were created with busy parents in mind, providing a quick and efficient way to connect with others in the tech sector. Use the issue number links in the table to view the acceptance criteria.
 
-Write your user stories in this section.
+| Priority | Issue | User Story |
+| --- | --- | --- |
+| Must | [#1](https://github.com/Gilberto2025123/parent-code-blog/issues/1) | As a parent working in tech, I can create a comment on a blog post so that I can share advice or experiences with  |
+| Must | [#2](https://github.com/Gilberto2025123/parent-code-blog/issues/2) | As a site user, I can view a paginated list of posts so that I can select which post I want to view. |
+| Must | [#3](https://github.com/Gilberto2025123/parent-code-blog/issues/3)| As a site user, I can view a detailed blog post so that I can read advice and insights from other parents.  |
+| Must | [#4](https://github.com/Gilberto2025123/parent-code-blog/issues/4)  | As a blog author, I can edit my post so that I can update or correct information.  |
+| Must | [#5](https://github.com/Gilberto2025123/parent-code-blog/issues/5) | As a blog author, I can delete my blog post so that I can remove content I no longer want visible. |
+| Must | [#6](https://github.com/Gilberto2025123/parent-code-blog/issues/6)  | As a blog author, I can upload images with my posts so that my content is more engaging. |
+| Must | [#7](https://github.com/Gilberto2025123/parent-code-blog/issues/7) | As a site user, I can comment on blog posts so that I can contribute to the discussion.  |
+| Must | [#8](https://github.com/Gilberto2025123/parent-code-blog/issues/8) | As a site user, I can like blog posts so that I can show appreciation for helpful content. |
+| Must | [#9](https://github.com/Gilberto2025123/parent-code-blog/issues/9)  | As a site user, I see success notifications after completing actions so that I know my action worked.  |
+| Could | [#10](https://github.com/Gilberto2025123/parent-code-blog/issues/10) | As a site user, I can bookmark posts so that I can read them later. :contentReference[oaicite:19]{index=19} |
+| Could | [#11](https://github.com/Gilberto2025123/parent-code-blog/issues/11) | As a site user, I can share posts to social media so that I can spread valuable advice.  |
+| Should | [#12](https://github.com/Gilberto2025123/parent-code-blog/issues/12) | As a new site user, I can register and log in so that I can create posts and interact with others. |
+| Should | [#13](https://github.com/Gilberto2025123/parent-code-blog/issues/13)  | As a parent in tech, I can have a profile page so that I can share my background with the community.  |
+| Should | [#14](https://github.com/Gilberto2025123/parent-code-blog/issues/14) | As a site user, I can search blog posts so that I can quickly find relevant advice. |
+| Should | [#15](https://github.com/Gilberto2025123/parent-code-blog/issues/15) | As a site user, I can filter posts by categories (e.g., job hunting, parenting tips, remote work) so that I can browse specific topics. |
+| Should | [#16](https://github.com/Gilberto2025123/parent-code-blog/issues/16) | As a site user, I can sort posts so that I can view the newest or most liked content first. |
+| Could | [#17](https://github.com/Gilberto2025123/parent-code-blog/issues/17) | As a parent in tech, I can browse job opportunities so that I can balance family life with career growth. |
+| Won’t | [#18](https://github.com/Gilberto2025123/parent-code-blog/issues/18)  | As a site user, I would like to send private messages to other parents so that I can connect more personally. |
+| Must | [#19](https://github.com/Gilberto2025123/parent-code-blog/issues/19) | As a site user, I can use the app across devices and browsers so that I can access content easily. |
+| Won’t | [#20](https://github.com/Gilberto2025123/parent-code-blog/issues/20) | As a site user, I would like AI suggestions for parenting and tech advice so that I get instant guidance.  |
+| Must | [#21](https://github.com/Gilberto2025123/parent-code-blog/issues/21) | As a user, I must be notified when I have not accessed the correct webpage so that I can find the correct deployed link.|
+| Must | [#22](https://github.com/Gilberto2025123/parent-code-blog/issues/22) | As a Site Admin, I can approve or disapprove comments so that I can filter out objectionable comments  |
+| Must | [#23](https://github.com/Gilberto2025123/parent-code-blog/issues/23) | As a user, I want to access an "About Us" page to discover more information about the website. |
+
 
 ---
 ### Agile Methodology
 
-Project Board can be found here: https://github.com/users/Gilberto2025123/projects/7
+The project utilised an Agile methodology approach, as shown below with the Kanban board. I also used MoSCoW prioritisation to ensure that User stories were tracked accordingly. During the development of the application, it served as a guide to ensure that I was keeping with the project brief and ensure effective time management, and meeting the respective acceptance criteria for each time. As an initial sprint, I am happy with how the web app functions and looks, but as seen from the unfinished tasks in the backlog, there were more ideas I did not manage to complete and so are left for future development. In this case, there is placeholder code which will help with the next iteration and sprint. 
+
+I also highly recommend using the Magic Goblin Tool To Do list generator: https://goblin.tools/ToDo - I used this to help me manage my time in the early stages of planning and development. 
+
+**Project Board can be found here:** https://github.com/users/Gilberto2025123/projects/7
 
   <img width="1492" height="799" alt="Screenshot 2025-10-13 at 06 20 49" src="https://github.com/user-attachments/assets/38e53713-e1ae-49d6-a604-3600d9503abb" />
   <img width="1491" height="805" alt="Screenshot 2025-10-06 at 22 09 19" src="https://github.com/user-attachments/assets/72a58fa4-c4b7-4f35-bc5f-63c3ee19041e" />
   <img width="1495" height="814" alt="Screenshot 2025-10-13 at 12 31 42" src="https://github.com/user-attachments/assets/a52e3385-d37e-446a-821d-b92748cf67ae" />
 
-  Explain your agile approach to your project and insert screenshots of your Kanban board (iterations, user stories, tasks, acceptance criteria, labels, story points).
 
 ---
 
 ### Wireframes
+I used Balsamiq to create the wireframe designs. A landing page was added later (not shown here) to provide a clear call to action for new users and site visitors.
 
 <img width="967" height="813" alt="Desktop" src="https://github.com/user-attachments/assets/1a30eab1-27c5-406e-89d0-4913598f06b1" />
 
@@ -100,99 +131,108 @@ Project Board can be found here: https://github.com/users/Gilberto2025123/projec
 ---
 
 ### Typography
+These fonts were used to provide an attractive and playful interface but one that is also accessible to all. Fitting in with the project brief. I used Google Fonts to explore possible options that would fit with my vision of the design. 
+
+Funnel Display - Used for headings and section intros
+
+Comforta - Used for the main body of the text and can be viewed easily across devices.
 
   <img width="1483" height="678" alt="Screenshot 2025-10-13 at 13 45 27" src="https://github.com/user-attachments/assets/093f4029-4627-4503-aaac-7c44de838925" />
-
-  Explain the font(s) you've used for your project.
 
 
 ---
   ### Colour Scheme
+  This colour palette was chosen to provide a bright and calming space to ensure accessibility for all. These colours are muted to provide space for creativity, which should help the user to spend as much time on the site without causing overstimulation. I used Coolors to develop the right palette: https://coolors.co/
 
   <img width="1600" height="1200" alt="Parent Code" src="https://github.com/user-attachments/assets/504d3434-741e-45a5-8fac-7fd6ec593e6d" />
 
-  Include a screenshot of the colour scheme for your project.
+
 
 ---
 
- ### Database Diagram ERD)
-
-  List your models and describe how they are connected.
+ ### Database Diagram ERD
+ Below is a screenshot of the entity relationship diagram data structure for the project. Not all models are present in the current version of the app, and are left in there for future development. 
 
   <img width="2283" height="1268" alt="Parent Code ERD" src="https://github.com/user-attachments/assets/0c7656ab-4dec-43b3-a2d1-5b9edc21f901" />
 
 
 ---
 
-
 ## Features
+Across the application, there is JavaScript, Bootstrap and custom CSS styling to improve the interactivity of the site. These take the form of highlighted buttons, raised boxes, modals and hover effects. These are there to help the user navigate the site with ease.  
 
-Explain your website’s features such as navigation, pages, links, forms, input fields, and CRUD operations.
 ### Navigation
+The Navigation bar has links to About Us, Contact Us, Sign Up and Login, as well as a link to the landing page when the logo is clicked. The Blog appears only to those who are logged in and authenticated to encourage sign-ups, but also for security. 
 <img width="1512" height="72" alt="Screenshot 2026-01-30 at 02 48 38" src="https://github.com/user-attachments/assets/f0cf2700-e707-4380-b3be-8c2d89054385" />
 
-  Describe your navigation bar and links.
 <img width="1503" height="64" alt="Screenshot 2026-01-30 at 02 47 52" src="https://github.com/user-attachments/assets/84dfd4b4-7af3-4c0e-a481-2b9224660736" />
 
 ### Footer
+The footer has links to external social media sites to allow for sharing content. They open in separate windows. 
 <img width="1512" height="100" alt="Screenshot 2026-01-30 at 02 57 04" src="https://github.com/user-attachments/assets/1575a313-7bd3-4881-992c-72cecdfdcce8" />
 
-  Describe your footer contents and functionality.
-
+ 
 ### Landing Page
+The landing page provides a call to action to new users and returning users. It has a clear description of the purpose of the website, and the Join Our Community button will change to Explore Posts once a user is authenticated and signed up. 
 <img width="1512" height="982" alt="Landing Page ParentCode" src="https://github.com/user-attachments/assets/d9074f9b-3450-4460-8e40-ff25a6d9f06a" />
-
-  Explain the purpose and layout of your home page.
 
 
 ### Additional Pages
-Describe any other pages in your project.
 #### About Us
+Here, I have included a page to explain the purpose of the application for all users and provided an image to bring a human element to the site. 
 <img width="1512" height="982" alt="AboutUs ParentCode" src="https://github.com/user-attachments/assets/595de549-0ef3-4957-a7fa-220f36b88cd3" />
 
 #### Contact Us 
+Here is call to action for those seeking further correspondence with the Admins of the site by providing a form to contact them. This is using Bootstrap forms. 
 <img width="1512" height="982" alt="ContactUs ParentCode" src="https://github.com/user-attachments/assets/e780894c-acfa-4350-84e2-7600a5272de9" />
 
-#### Blog Pages
+#### Sign Up
+Here is a call to action to those who are ready to engage with the community and request that the criteria be met when creating new user accounts. This is using Bootstrap forms.
+<img width="1512" height="982" alt="Sign Up ParentCode" src="https://github.com/user-attachments/assets/11a8414a-3290-41b8-8329-388f0751a0bd" />
+
+
+#### Blog Page
 ##### Main Blog page 
+Upon successful user authentication, users will be able to access all blog posts as shown below. They will also see a success notification telling them they are logged in. 
 <img width="1512" height="982" alt="Login Success Notification Blog Page" src="https://github.com/user-attachments/assets/27990d45-92cc-41fe-9862-e0abbecc7376" />
 
 ##### Individual Blog page 
+Users will be able to browse through the posts as shown here. They will be able to see the category, the number of comments made, whether they have made a comment(depending on approval) and have the option to leave a new comment or go back to the main blog page via the button at the bottom of the post. 
 <img width="1508" height="859" alt="Individual Blog Post 1" src="https://github.com/user-attachments/assets/d4c66ddf-7522-44d9-bad4-e9451d2b0001" />
 
-  <img width="1491" height="862" alt="Individual Blog Post 2" src="https://github.com/user-attachments/assets/89866a31-80cc-4692-976c-4f5afead7173" />
+<img width="1491" height="862" alt="Individual Blog Post 2" src="https://github.com/user-attachments/assets/89866a31-80cc-4692-976c-4f5afead7173" />
 
   
 ### CRUD 
 
-  Explain how Create, Read, Update, and Delete functionalities work in your project.
-
   #### Create 
+  Users can leave a comment by writing in the box provided and submitting it for approval. 
   <img width="1506" height="860" alt="CRUD - Create a comment and submit notification" src="https://github.com/user-attachments/assets/16096d86-3c03-445e-b6d0-acbc611c6d8a" />
 
   #### Read 
+   Users will be able to read all comments made on the post by them as well as other users. They will only have the option of editing or deleing their own comments on each post.  As shown with the buttons provided. They will see an approval pending notification
   <img width="1502" height="851" alt="CRUD - Edit, Delete buttons, Approval Pending Notification" src="https://github.com/user-attachments/assets/465e324b-5b15-437f-9b81-4a43200b41a6" />
 
   #### Update
+  Users will be able to update their comments on each post, as shown belo,w and will see a notification to say that their comment has been updated. 
   <img width="1504" height="588" alt="CRUD - Update:Edit Comment Form" src="https://github.com/user-attachments/assets/2c5b64e8-dbed-4dd3-a369-603b26bea535" />
 <img width="1505" height="854" alt="CRUD - Comment Updated notification" src="https://github.com/user-attachments/assets/c408415d-fdd9-4341-9536-afab4d336148" />
 
   #### Delete
-  
+  Users will be able to delete their unwanted comments via the delete button, which will provide a modal, giving the user a chance to change their mind. Once they have deleted a comment, they will receive a comment deleted notification. 
 <img width="1511" height="849" alt="CRUD - Delete Modal " src="https://github.com/user-attachments/assets/c87a2ade-fd75-4044-9000-58ac7db48aa4" />
 
 <img width="1507" height="854" alt="CRUD - Comment Deleted notification" src="https://github.com/user-attachments/assets/7b0579c1-6b80-410d-8573-f1d7ef7cdddb" />
 
 #### Authentication and Authorisation
-Users using the back-end Django framework and Bootstrap design are now able to sign up confidently to the site. The Admin also has authentication and authorisation tools as shown below. 
+Users using the back-end Django framework and Bootstrap design are now able to sign up confidently to the site. The Admin also has authentication and authorisation tools, as shown below. 
 
   -  Admin User authentication with secure registration and login
-    <img width="1512" height="982" alt="Django Admin (Users)" src="https://github.com/user-attachments/assets/64eaf95a-c12b-47c9-b262-a49d2266a270" />
+    <img width="1512" height="982" alt="Django Admin " src="https://github.com/user-attachments/assets/79441d28-7b18-4173-a529-1ed4123d6122" />
 
-  - Admin functionality for managing user data, comments, and user accounts
-<img width="1512" height="982" alt="Django Admin " src="https://github.com/user-attachments/assets/79441d28-7b18-4173-a529-1ed4123d6122" />
+  - Admin functionality for managing user data, comments, and user accounts. 
 <img width="1512" height="982" alt="Django Admin Interface" src="https://github.com/user-attachments/assets/50bfebfb-7bb4-4a25-a5d6-fdb8c26a5d01" />
-
+<img width="1512" height="982" alt="Django Admin (Users)" src="https://github.com/user-attachments/assets/64eaf95a-c12b-47c9-b262-a49d2266a270" />
 
 ---
 
@@ -220,7 +260,7 @@ Users using the back-end Django framework and Bootstrap design are now able to s
 - **Google Fonts:** Used to select typography aligned with branding and readability requirements.
 - **Font Awesome:** Used to incorporate consistent iconography across the user interface.
 - **Bootstrap:** For responsive design and styling.
-- **Balsamiq:** Used to produce wireframes and iterate early user interface concepts.
+- **Balsamiq:** Used to produce wireframes and iterate on user interface concepts.
 - **TinyPNG Converter:** Used to compress and optimise images to support performance and load times.
 - **Pexels:** Used as a source of royalty-free imagery, where appropriate.
 
@@ -230,6 +270,7 @@ Users using the back-end Django framework and Bootstrap design are now able to s
 - **Perplexity:** Used for collecting post content with real-world references. 
 - **CS50W Harvard Lectures:** Used to reinforce understanding of web application development concepts and best practices.
 - **YouTube Tutorials:** Used to supplement learning and inform implementation approaches where appropriate.
+- **W3Schools:** Used to troubleshoot and problem solve. 
 
 ### Validation and Standards
 - **W3C Validator:** Used to validate HTML for semantic structure and accessibility considerations.
@@ -255,24 +296,71 @@ The website passed its performance testing using Google Lighthouse to ensure acc
 ---
 ## Manual Testing – User Stories
 
-| User Story | Test | Pass | Screenshot |
-|---|---|---|---|
-| Paste your user story here | Describe what is visible to the user and what action they should perform | Yes | Attach screenshot |
+| User Story | Test | Pass |
+|---|---|---|
+| As a parent working in tech, I can create a comment on a blog post so that I can share advice or experiences. | Log in (required). Open a blog post. Enter text into the comment box and click **Submit**. Confirm the new comment appears on the post (immediately or after refresh) and is linked to your user/account if applicable. | Yes |
+| As a site user, I can view a paginated list of posts so that I can select which post I want to view. | Go to the blog listing page. Confirm a limited number of posts show per page. Click **Next/Previous** buttons. Confirm the list updates and you can navigate back and forth correctly. | Yes |
+| As a site user, I can view a detailed blog post so that I can read advice and insights from other parents. | From the blog list, click a post title. Confirm you land on a post detail page showing title, author, date, content, and any images/comments. | Yes |
+| As a blog author, I can edit my post so that I can update or correct information. | Create or open one of your posts. Click **Edit**. Update the body and click **Update Comment**. Confirm the post displays the updated content. | Yes |
+| As a blog author, I can delete my blog post so that I can remove content I no longer want visible. | Open one of your posts. Click **Delete** (and confirm if prompted). Confirm you are redirected appropriately and the post no longer appears in the posts list or via direct URL. | Yes |
+| As a blog author, I can upload images with my posts so that my content is more engaging. | Create/edit a post. Use the image upload control to select an image file and save the post. Confirm the image displays on the post detail page and loads correctly. | No - feature not yet developed |
+| As a site user, I can comment on blog posts so that I can contribute to the discussion. | Open a blog post. Add a comment and submit. Confirm the comment is displayed (or queued for approval if moderation is enabled). | Yes |
+| As a site user, I can like blog posts so that I can show appreciation for helpful content. | Open a blog post. Click the **Like** button/icon. Confirm the like count increases (or icon changes state). Refresh the page and confirm the like persists. | No - feature not yet developed |
+| As a site user, I see success notifications after completing actions so that I know my action worked. | Perform an action (e.g., create post, delete comment, login, update comment). Confirm a success message/toast/banner appears with appropriate wording and disappears/behaves correctly. | Yes |
+| As a site user, I can bookmark posts so that I can read them later. | Open a blog post. Click **Bookmark/Save**. Go to bookmarks/saved items area (or profile section). Confirm the post appears there. Remove the bookmark and confirm it disappears. | No - feature not yet developed |
+| As a site user, I can share posts to social media so that I can spread valuable advice. | Open a blog post. Click a social share button/link. Confirm it opens the correct platform share flow (or copies a shareable link) and that the URL/title preview is correct. | No - feature not yet developed |
+| As a new site user, I can register and log in so that I can create posts and interact with others. | Go to **Sign up**. Create an account with valid details. Log out, then log in with the new credentials. Confirm you can access logged-in features (e.g., Create comments). | Yes |
+| As a parent in tech, I can have a profile page so that I can share my background with the community. | Log in and navigate to **Profile**. Confirm profile fields display (bio/role/etc.). Update profile details and save. Confirm the updated details show on your profile page. | No - feature not yet developed |
+| As a site user, I can search blog posts so that I can quickly find relevant advice. | Use the search bar on the posts page. Search for a keyword that exists. Confirm relevant results appear. Search for a random term and confirm that “no results” behaviour is user-friendly. | No - feature not yet developed |
+| As a site user, I can filter posts by categories (e.g., job hunting, parenting tips, remote work) so that I can browse specific topics. | From the posts listing, apply a category filter. Confirm only posts in that category appear. Clear the filter and confirm all posts return. | No - feature not yet developed |
+| As a site user, I can sort posts so that I can view the newest or most liked content first. | On the posts listing page, apply sort options (e.g., **Newest**, **Most liked**). Confirm ordering changes correctly and stays consistent after refresh/navigation. | No - feature not yet developed |
+| As a parent in tech, I can browse job opportunities so that I can balance family life with career growth. | Navigate to the jobs/opportunities section. Confirm a list of jobs is visible with key details. Open a job to view more information. Confirm links and navigation work correctly. | No - feature not yet developed|
+| As a site user, I would like to send private messages to other parents so that I can connect more personally. | Navigate to user profiles (if available). Confirm there is **no** private messaging feature available (no message button/inbox). | No - feature not yet developed |
+| As a site user, I can use the app across devices and browsers so that I can access content easily. | Test core pages (home, posts list, post detail, login/register) on multiple browsers (e.g., Chrome/Firefox/Edge/Safari) and at different screen sizes (mobile/tablet/desktop). Confirm layout is responsive and key actions work without visual or functional issues. | Yes |
+| As a site user, I would like AI suggestions for parenting and tech advice so that I get instant guidance. | Confirm there is **no** AI suggestions feature present in the UI (no AI button/panel/auto-suggestions area). | No - feature not yet developed|
+| As a user, I must be notified when I have not accessed the correct webpage so that I can find the correct deployed link. | Enter an invalid URL route (e.g., `/randompage`). Confirm a clear error page/message appears (404 or custom), guiding users to the correct page/link (e.g., home button). | Yes |
+| As a Site Admin, I can approve or disapprove comments so that I can filter out objectionable comments. | Log in as admin. Go to the admin panel. Locate a pending comment and approve it. Confirm it appears publicly. Disapprove/delete another comment and confirm it does not appear publicly. | Yes |
+| As a user, I want to access an "About Us" page to discover more information about the website. | From the navigation/menu/footer, click **About Us**. Confirm the page loads and displays relevant site information. Test direct URL access to the About page as well. | Yes |
+
 
 ---
 
 ## Manual Testing – Features
 
-| Feature | Action | Status | Screenshot |
-|---|---|---|---|
-| Feature description | User steps | Complete | Attach screenshot |
+### Navigation
+| Test Case | Expected Result | Outcome |
+|---|---|---|
+| Click Logo/Landing Page | Redirects to the landing page | Pass |
+| Click About Us Page | Redirects to the About Us page | Pass |
+| Click Contact Us Page | Redirects to the Contact Us page | Pass |
+| Click Blog Page | Redirects to the Blog page | Pass |
+| Click Explore Posts | Loads the posts listing/explore view | Pass |
+| Click Next and Previous Navigation buttons | Navigates between pages of posts where applicable | Pass |
+| Click Back to Blog button | Returns to the Blog page/posts listing | Pass |
+| Open new page from social media links | Opens the relevant social link in a new tab/window | Pass |
+
+### Authentication (Login / Logout / Register)
+| Test Case | Expected Result | Outcome |
+|---|---|---|
+| Click Login/Logout | User can log in and log out successfully | Pass |
+| Click Sign Up/Register for new account | Registration completes successfully and account is created | Pass |
+| Access admin interface | Admin users can access the admin interface successfully | Pass |
+
+### Blog Interaction (Posts, Comments, Responsiveness)
+| Test Case | Expected Result | Outcome |
+|---|---|---|
+| Click Individual Blog Post/Read | Opens the selected post and displays full content | Pass |
+| Create, Update/Edit and Delete Personal Comment | User can create, edit, and delete their own comment successfully | Pass |
+| Responsiveness | Layout and functionality remain usable across screen sizes | Pass |
+
+
 
 ---
 
 ### Browser Compatibility
 
 #### Cross-browser testing
-I used a website called Browserling: https://www.browserling.com/ (It gives you 3 minutes at a time to test the features of the website on different web browsers. This is especially useful if you do not have a Windows system. 
+I used a website called Browserling: https://www.browserling.com/ (It gives you 3 minutes at a time to test the features of your website on different web browsers. This is especially useful if you do not have a Windows system. 
 
 ##### Chrome
 | Test | Expected Result | Actual Result |
@@ -348,16 +436,18 @@ I used a website called Browserling: https://www.browserling.com/ (It gives you 
 | Open new page from social media links | Success | Success |
 
 ### Code Validation
-Code validation was carried out to ensure the integrity of the code and compliance with PEP8 guidelines, HTML, CSS and JavaScript standards. This enabled the code to be accessible on testing and deployment. 
+Code validation was carried out to ensure the integrity of the code and compliance with PEP8 guidelines, HTML, CSS and JavaScript standards. This enabled the code to be accessible for testing and deployment. 
 
 #### HTML 
+W3C Validator: https://validator.w3.org/detailed.html
 <img width="1495" height="582" alt="HTML Validation ParentCode" src="https://github.com/user-attachments/assets/995f33ec-f3a3-4d24-83ec-befeaf99f84b" />
 
 #### CSS 
+Validated via W3C CSS Validator: https://jigsaw.w3.org/css-validator/
 <img width="1482" height="859" alt="CSS Validation ParentCode" src="https://github.com/user-attachments/assets/d4028dec-6351-45bd-9285-ba6149b71834" />
 
 #### JavaScript 
-To test the code, I used the JS Hint website. 
+To test the JavaScript code, I used the JS Hint website. https://jshint.com/  I also used Google Chrome Developer Tools.  
 <img width="1512" height="864" alt="JavaScript Test" src="https://github.com/user-attachments/assets/a099f912-6a62-4f1f-9ecb-0f316e99f01f" />
 
 #### Python 
@@ -382,8 +472,9 @@ All Python code was tested, and results show no errors were found, utilising the
 ## Bugs
 
 ### 500 Server Error 
+
 <img width="475" height="84" alt="Screenshot 2025-10-13 at 14 04 27" src="https://github.com/user-attachments/assets/560699a9-ede3-4588-81ea-44bdb22e07d8" />
- This was the major issue with my initial submission of the project as it prevented much of the site to function. This was especially true when loading the page, attempting to sign up/ login to the admin site. 
+This was the major issue with my initial submission of the project as it prevented much of the site to function. This was especially true when loading the page, attempting to sign up/ login to the admin site. 
 
 To resolve this, I contacted my facilitator at the Code Institute, who helped provide feedback on how to test iteratively. I then utilised Chrome Developer Tools and AI to identify where the source of the problem was and discovered that it had been an issue in the base HTML file, and the site was trying to authenticate before the new user was saved and using request.POST.get('field') instead of the form’s cleaned data. I made changes to views/forms and the template to fix this.  It now runs as intended. 
 
@@ -445,7 +536,7 @@ Follow these steps:
 **Personal Note:** 
 I'd like to thank my wife and baby daughter for their patience and support for me throughout this journey. It wasn't easy, but having you both by my side has made each moment worth fighting through. 
 
-Another thank you to the course convenors and facilitators at the Code Institute(you know who you are), for the resources and sessions and the personal help received in moments of crisis. 
+Another thank you to the course convenors and facilitators at the Code Institute(you know who you are),for the resources and sessions and the personal help received in moments of crisis. 
 
 I also send a huge thank you to my cohort group, where I not only made professional links but genuine friendships along the way! Thank you for pushing me again, you know who you are!
 
