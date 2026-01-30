@@ -2,6 +2,65 @@
 
 This site was submitted as part of Code Institute's final project, utilising Django, Python, JavaScript, HTML, and CSS. This site is a blog that is dedicated to helping those on the parenthood journey navigate the challenges and joys of being a parent in the tech sector.
 
+### Deployed Live link:
+ https://parent-code-app-e92a092d91bc.herokuapp.com/
+---
+
+<img width="1506" height="857" alt="Parent Code Amiresponsive fireship image" src="https://github.com/user-attachments/assets/04d511cb-e23a-46e2-a5e9-b2c9acec8832" />
+
+---
+## Contents
+
+- [Design and Planning](#design-and-planning)
+  - [User Stories](#user-stories)
+  - [Agile Methodology](#agile-methodology)
+  - [Wireframes](#wireframes)
+  - [Typography](#typography)
+  - [Colour Scheme](#colour-scheme)
+  - [Database Diagram ERD](#database-diagram-erd)
+
+- [Features](#features)
+  - [Navigation](#navigation)
+  - [Footer](#footer)
+  - [Landing Page](#landing-page)
+  - [Additional Pages](#additional-pages)
+    - [About Us](#about-us)
+    - [Contact Us](#contact-us)
+    - [Blog Page](#blog-page)
+  - [CRUD](#crud)
+    - [Authentication and Authorisation](#authentication-and-authorisation)
+
+- [Technologies Used](#technologies-used)
+  - [Development and Programming](#development-and-programming)
+  - [Tools and Workflow](#tools-and-workflow)
+  - [Database and Hosting](#database-and-hosting)
+  - [Design and UI/UX](#design-and-uiux)
+  - [AI and Learning Resources](#ai-and-learning-resources)
+  - [Validation and Standards](#validation-and-standards)
+
+- [Testing](#testing)
+  - [Google Lighthouse Performance](#google-lighthouse-performance)
+    - [Mobile](#mobile)
+    - [Desktop](#desktop)
+  - [Manual Testing – User Stories](#manual-testing--user-stories)
+  - [Manual Testing – Features](#manual-testing--features)
+  - [Browser Compatibility](#browser-compatibility)
+    - [Cross-browser testing](#cross-browser-testing)
+      - [Chrome](#chrome)
+      - [Firefox](#firefox)
+      - [Edge](#edge)
+      - [Safari](#safari)
+  - [Code Validation](#code-validation)
+
+- [Bugs](#bugs)
+
+- [Deployment](#deployment)
+  - [Creating a Repository on GitHub](#creating-a-repository-on-github)
+  - [Creating an App on Heroku](#creating-an-app-on-heroku)
+  - [Create a Database](#create-a-database)
+  - [Deploying to Heroku](#deploying-to-heroku)
+
+- [Credits](#credits)
 
 
 ---
