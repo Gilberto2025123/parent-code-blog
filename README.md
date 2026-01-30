@@ -1,9 +1,13 @@
 ### Parent Code Blog App
 
-This site was submitted as part of Code Institute's final project, utilising Django, Python, JavaScript, HTML, and CSS. This site is a blog that is dedicated to helping those on the parenthood journey navigate the challenges and joys of being a parent in the tech sector.
+This site was submitted as part of Code Institute's final project, utilising Django, Python, JavaScript, HTML, and CSS. This web application is a blog that is dedicated to helping those on the parenthood journey navigate the challenges and joys of being a parent in the tech sector. 
 
-### Deployed Live link:
- https://parent-code-app-e92a092d91bc.herokuapp.com/
+
+
+##### Deployed Live link: 
+https://parent-code-app-e92a092d91bc.herokuapp.com/
+
+
 ---
 
 <img width="1506" height="857" alt="Parent Code Amiresponsive fireship image" src="https://github.com/user-attachments/assets/04d511cb-e23a-46e2-a5e9-b2c9acec8832" />
@@ -74,6 +78,8 @@ Write your user stories in this section.
 ---
 ### Agile Methodology
 
+Project Board can be found here: https://github.com/users/Gilberto2025123/projects/7
+
   <img width="1492" height="799" alt="Screenshot 2025-10-13 at 06 20 49" src="https://github.com/user-attachments/assets/38e53713-e1ae-49d6-a604-3600d9503abb" />
   <img width="1491" height="805" alt="Screenshot 2025-10-06 at 22 09 19" src="https://github.com/user-attachments/assets/72a58fa4-c4b7-4f35-bc5f-63c3ee19041e" />
   <img width="1495" height="814" alt="Screenshot 2025-10-13 at 12 31 42" src="https://github.com/user-attachments/assets/a52e3385-d37e-446a-821d-b92748cf67ae" />
@@ -123,14 +129,18 @@ Write your user stories in this section.
 
 Explain your website’s features such as navigation, pages, links, forms, input fields, and CRUD operations.
 ### Navigation
+<img width="1512" height="72" alt="Screenshot 2026-01-30 at 02 48 38" src="https://github.com/user-attachments/assets/f0cf2700-e707-4380-b3be-8c2d89054385" />
 
   Describe your navigation bar and links.
+<img width="1503" height="64" alt="Screenshot 2026-01-30 at 02 47 52" src="https://github.com/user-attachments/assets/84dfd4b4-7af3-4c0e-a481-2b9224660736" />
 
 ### Footer
+<img width="1512" height="100" alt="Screenshot 2026-01-30 at 02 57 04" src="https://github.com/user-attachments/assets/1575a313-7bd3-4881-992c-72cecdfdcce8" />
 
   Describe your footer contents and functionality.
 
 ### Landing Page
+<img width="1512" height="982" alt="Landing Page ParentCode" src="https://github.com/user-attachments/assets/d9074f9b-3450-4460-8e40-ff25a6d9f06a" />
 
   Explain the purpose and layout of your home page.
 
@@ -138,18 +148,49 @@ Explain your website’s features such as navigation, pages, links, forms, input
 ### Additional Pages
 Describe any other pages in your project.
 #### About Us
+<img width="1512" height="982" alt="AboutUs ParentCode" src="https://github.com/user-attachments/assets/595de549-0ef3-4957-a7fa-220f36b88cd3" />
+
 #### Contact Us 
-#### Blog Page 
-  
+<img width="1512" height="982" alt="ContactUs ParentCode" src="https://github.com/user-attachments/assets/e780894c-acfa-4350-84e2-7600a5272de9" />
+
+#### Blog Pages
+##### Main blog page 
+<img width="1512" height="982" alt="Login Success Notification Blog Page" src="https://github.com/user-attachments/assets/27990d45-92cc-41fe-9862-e0abbecc7376" />
+##### Individual Blog page 
+
+<img width="1508" height="859" alt="Individual Blog Post 1" src="https://github.com/user-attachments/assets/d4c66ddf-7522-44d9-bad4-e9451d2b0001" />
+
+  <img width="1491" height="862" alt="Individual Blog Post 2" src="https://github.com/user-attachments/assets/89866a31-80cc-4692-976c-4f5afead7173" />
+
   
 ### CRUD 
 
   Explain how Create, Read, Update, and Delete functionalities work in your project.
 
+  #### Create 
+  <img width="1506" height="860" alt="CRUD - Create a comment and submit notification" src="https://github.com/user-attachments/assets/16096d86-3c03-445e-b6d0-acbc611c6d8a" />
+
+  #### Read 
+  <img width="1502" height="851" alt="CRUD - Edit, Delete buttons, Approval Pending Notification" src="https://github.com/user-attachments/assets/465e324b-5b15-437f-9b81-4a43200b41a6" />
+
+  #### Update
+  <img width="1504" height="588" alt="CRUD - Update:Edit Comment Form" src="https://github.com/user-attachments/assets/2c5b64e8-dbed-4dd3-a369-603b26bea535" />
+<img width="1505" height="854" alt="CRUD - Comment Updated notification" src="https://github.com/user-attachments/assets/c408415d-fdd9-4341-9536-afab4d336148" />
+
+  #### Delete
+  
+<img width="1511" height="849" alt="CRUD - Delete Modal " src="https://github.com/user-attachments/assets/c87a2ade-fd75-4044-9000-58ac7db48aa4" />
+
+<img width="1507" height="854" alt="CRUD - Comment Deleted notification" src="https://github.com/user-attachments/assets/7b0579c1-6b80-410d-8573-f1d7ef7cdddb" />
+
 #### Authentication and Authorisation
 
   - User authentication with secure registration and login
+    <img width="1512" height="982" alt="Django Admin (Users)" src="https://github.com/user-attachments/assets/64eaf95a-c12b-47c9-b262-a49d2266a270" />
+
   - Admin functionality for managing task data and user accounts
+<img width="1512" height="982" alt="Django Admin " src="https://github.com/user-attachments/assets/79441d28-7b18-4173-a529-1ed4123d6122" />
+<img width="1512" height="982" alt="Django Admin Interface" src="https://github.com/user-attachments/assets/50bfebfb-7bb4-4a25-a5d6-fdb8c26a5d01" />
 
 
 ---
@@ -204,8 +245,10 @@ Describe any other pages in your project.
 ### Google Lighthouse Performance
 
 #### Mobile
+<img width="986" height="817" alt="Screenshot 2026-01-30 at 01 15 30" src="https://github.com/user-attachments/assets/6f09b55e-be09-494b-a35a-83c1cc4179fe" />
 
 #### Desktop
+<img width="980" height="819" alt="Screenshot 2026-01-30 at 01 17 19" src="https://github.com/user-attachments/assets/7eb707c5-5e43-46be-935d-b1acaab52a4c" />
 
 ---
 ## Manual Testing – User Stories
@@ -303,8 +346,18 @@ Describe any other pages in your project.
 
 ### Code Validation
 
-  Validate your HTML, CSS, JS, and Python code (all files).
-  Include validation screenshots.
+#### HTML 
+<img width="1495" height="582" alt="HTML Validation ParentCode" src="https://github.com/user-attachments/assets/995f33ec-f3a3-4d24-83ec-befeaf99f84b" />
+
+#### CSS 
+<img width="1482" height="859" alt="CSS Validation ParentCode" src="https://github.com/user-attachments/assets/d4028dec-6351-45bd-9285-ba6149b71834" />
+
+#### JavaScript 
+<img width="1512" height="864" alt="JavaScript Test" src="https://github.com/user-attachments/assets/a099f912-6a62-4f1f-9ecb-0f316e99f01f" />
+
+#### Python 
+  
+ 
 
 
 ## Bugs
